@@ -1,5 +1,3 @@
-import "./styles.css"
-
 export default class Spinner {
     constructor (_parent_obj) {
         this.parent_obj = _parent_obj
