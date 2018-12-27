@@ -1,0 +1,24 @@
+{
+  "name": "stx-vanilla",
+  "version": "0.0.1",
+  "description": "Conjunto de librerias vanillajs para Sintaxyz Team",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloxdev/stx-vanilla.git"
+  },
+  "keywords": [
+    "vanilljs",
+    "js",
+    "sintaxyz"
+  ],
+  "author": "Carlos A. Martínez Jiménez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carloxdev/stx-vanilla/issues"
+  },
+  "homepage": "https://github.com/carloxdev/stx-vanilla#readme"
+}
