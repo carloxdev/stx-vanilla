@@ -3,3 +3,10 @@
 .DS_Store
 .Trashes
 Thumbs.db
+
+
+# JAVASCRIPT FILES
+# ---------------------------------------
+build
+node_modules
+*.log
