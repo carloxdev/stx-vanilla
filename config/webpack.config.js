@@ -10,7 +10,7 @@ const webpackInitConfig = {
         extensions: ['.js']
     },
     entry: {
-        spinner: ['@babel/polyfill', './src/Spinner/index.js'],
+        spinner: ['./src/Spinner/index.js'],
     },
     output: {
         path: path.join(basePath, distPath),
@@ -18,11 +18,6 @@ const webpackInitConfig = {
     },
     module: {
         rules: [
-            {
-                test: /\.js/,
-                exclude: /node_modules/,
-                use: ['babel-loader']
-            },
             {
                 test: /\.css/,
                 exclude: /node_modules/,
