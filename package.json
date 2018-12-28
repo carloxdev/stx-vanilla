@@ -1,11 +1,11 @@
 {
 	"name": "stx-vanilla",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Conjunto de librerias vanillajs para Sintaxyz Team",
 	"main": "build/index.js",
 	"scripts": {
-        "start": "webpack --config ./config/webpack.config.js",
-        "build": "webpack --mode production --config ./config/webpack.config.js --progress"
+		"start": "webpack --config ./config/webpack.config.js",
+		"build": "webpack --mode production --config ./config/webpack.config.js --progress"
 	},
 	"repository": {
 		"type": "git",
@@ -28,6 +28,7 @@
 		"@babel/preset-env": "7.2.3",
 		"babel-loader": "8.0.4",
 		"css-loader": "2.1.0",
+		"mini-css-extract-plugin": "0.5.0",
 		"webpack": "4.28.2",
 		"webpack-cli": "3.1.2"
 	}

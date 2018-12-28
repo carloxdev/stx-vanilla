@@ -1,4 +1,5 @@
 const path = require('path');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const basePath = __dirname;
 const distPath = '../build';
@@ -26,11 +27,22 @@ const webpackInitConfig = {
                 test: /\.css/,
                 exclude: /node_modules/,
                 use: [
-                  'css-loader',
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                    },
+                    'css-loader',
                 ],
             },
         ]
     },
+    plugins: [
+        new MiniCssExtractPlugin({
+          // Options similar to the same options in webpackOptions.output
+          // both options are optional
+            filename: "[name].css",
+            chunkFilename: "[id].css"
+        })
+    ],
 };
 
 module.exports = webpackInitConfig;
