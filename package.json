@@ -1,6 +1,6 @@
 {
 	"name": "stx-vanilla",
-	"version": "0.0.4",
+	"version": "0.0.6",
 	"description": "Conjunto de librerias vanillajs para Sintaxyz Team",
 	"main": "build/index.js",
 	"scripts": {
