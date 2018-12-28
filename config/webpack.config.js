@@ -9,11 +9,11 @@ const webpackInitConfig = {
         extensions: ['.js']
     },
     entry: {
-        app: ['@babel/polyfill', './src/Spinner/index.js'],
+        spinner: ['@babel/polyfill', './src/Spinner/index.js'],
     },
     output: {
         path: path.join(basePath, distPath),
-        filename: '[chunkhash][name].js'
+        filename: '[name].min.js'
     },
     module: {
         rules: [

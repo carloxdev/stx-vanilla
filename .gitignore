@@ -7,6 +7,5 @@ Thumbs.db
 
 # JAVASCRIPT FILES
 # ---------------------------------------
-build
 node_modules
 *.log
