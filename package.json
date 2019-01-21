@@ -11,6 +11,7 @@
 		"js",
 		"sintaxyz"
 	],
+	"typings": "src/Spinner/index",
 	"author": "Carlos A. Martínez Jiménez",
 	"license": "MIT",
 	"bugs": {
