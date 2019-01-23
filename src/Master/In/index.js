@@ -1,5 +1,3 @@
-import 'normalize.css'
-
 import Spinner from '../../Spinner/index.js'
 import AppMenu from '../../AppMenu/index.js'
 import UserMenu from '../../UserMenu/index.js'
