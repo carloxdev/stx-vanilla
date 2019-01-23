@@ -18,5 +18,7 @@
 		"url": "https://github.com/carloxdev/stx-vanilla/issues"
 	},
 	"homepage": "https://github.com/carloxdev/stx-vanilla#readme",
-	"devDependencies": {}
+	"devDependencies": {
+		"normalize.css": "8.0.1"
+	}
 }
