@@ -1,0 +1,73 @@
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans'); */
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600');
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    background-size: 100% auto;
+    background-color: white;
+}
+
+.wrapper {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+    .main {
+        flex: 1 0 auto;
+        background-color: #F0F2F5;
+    }
+
+        .content {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+
+            padding: 1em;
+        }
+
+    .footer {
+        flex-shrink: 0;
+        padding: 1em .5em;
+        text-align: center;
+        background-color: white;
+        border-top: 1px solid #d4d9dd;
+    }
+
+        .footer-text-left {
+            color: #454545;
+            margin-bottom: .5em;
+            font-size: .8em;
+        }
+
+        .footer-text-right {
+            font-size: .8em;
+            color: #8B9298;
+        }
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

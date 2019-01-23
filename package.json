@@ -17,5 +17,6 @@
 	"bugs": {
 		"url": "https://github.com/carloxdev/stx-vanilla/issues"
 	},
-	"homepage": "https://github.com/carloxdev/stx-vanilla#readme"
+	"homepage": "https://github.com/carloxdev/stx-vanilla#readme",
+	"devDependencies": {}
 }
