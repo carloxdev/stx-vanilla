@@ -50,29 +50,31 @@
 
 @media (min-width: 576px) {
 
-.user-menu {
-    width: 11em;
-    right: .5em;
-    font-size: 1em;
-}
+    .user-menu {
+        width: 11em;
+        right: .5em;
+        font-size: 1em;
+    }
 
 }
 
 @media (min-width: 768px) {
 
-.user-menu {
-    width: 11.2em;
-    right: 6.8em;
-}
+    .user-menu {
+        width: 11.2em;
+        right: 6.8em;
+    }
         .user-menu-item--out {
             display: none;
-        }    
+        }
+
 }
 
 @media (min-width: 1200px) {
 
-.user-menu {
-    width: 12.8em;
-    right: 7.6em;
-}
+    .user-menu {
+        width: 12.8em;
+        right: 7.6em;
+    }
+
 }    

@@ -40,6 +40,7 @@
         flex-grow: 8;
         text-align: center;
         align-self: center;
+        font-weight: 600;
     }
 
     .navbar-user {
@@ -58,11 +59,13 @@
         border-radius: 4px;
     }
 
-        .navbar-user-icon {}
-
         .navbar-user-text {
             display: none;
         }
+
+            .navbar-user-text-h1 {
+                font-weight: 600;
+            }
 
         .navbar-user-row {
             display: none;
@@ -75,16 +78,10 @@
 
 @media (min-width: 576px) {
 
-.navbar {}
-
-    .navbar-icon {}
-
     .navbar-title {
         text-align: left;
         margin-left: .5em;
     }
-
-    .navbar-user {}
 
         .navbar-user-icon {
             margin-right: 5px;
@@ -109,15 +106,10 @@
             font-size: .8em;
         }
 
-    .navbar-out {}        
 }
 
 
 @media (min-width: 768px) {
-
-.navbar { }
-
-    .navbar-icon { }
 
     .navbar-title {
         flex-grow: 7;
@@ -128,16 +120,6 @@
         margin-right: .5em;
     }
 
-        .navbar-user-icon { }
-
-        .navbar-user-text { }
-
-            .navbar-user-text-h1 { }
-
-            .navbar-user-text-h2 { }
-
-        .navbar-user-row { }    
-
     .navbar-out {
         flex-grow: 0;
         display: inline-block;
@@ -145,48 +127,46 @@
         padding-top: .2em;
         padding-right: .3em;
         margin-right: .3em;
+
+        font-weight: 600;
     }
 }
 
 @media (min-width: 1200px) {
 
-.navbar {
-    height: 3em;
-}
-
-    .navbar-icon {
-        padding: .45em;
-        margin-left: .5em;
+    .navbar {
+        height: 3em;
     }
 
-    .navbar-title { }
-
-    .navbar-user {
-        margin-right: 1em;
-    }
-
-        .navbar-user-icon {
-            font-size: 2em;
+        .navbar-icon {
+            padding: .45em;
+            margin-left: .5em;
         }
 
-        .navbar-user-text {}
-
-            .navbar-user-text-h1 {
-                text-align: center;
-                display: block;
-                margin-bottom: .2em;
-            }
-            .navbar-user-text-h2 {
-                text-align: center;
-                display: block;
-                font-size: .5em;
-            }
-
-        .navbar-user-row {
-            font-size: 1em;
+        .navbar-user {
+            margin-right: 1em;
         }
 
-    .navbar-out {
-        margin-top: .5em;
-    }
+            .navbar-user-icon {
+                font-size: 2em;
+            }
+
+                .navbar-user-text-h1 {
+                    text-align: center;
+                    display: block;
+                    margin-bottom: .2em;
+                }
+                .navbar-user-text-h2 {
+                    text-align: center;
+                    display: block;
+                    font-size: .5em;
+                }
+
+            .navbar-user-row {
+                font-size: 1em;
+            }
+
+        .navbar-out {
+            margin-top: .5em;
+        }
 }
