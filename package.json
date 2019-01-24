@@ -1,6 +1,6 @@
 {
 	"name": "stx-vanilla",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"description": "Conjunto de librerias vanillajs para Sintaxyz Team",
 	"repository": {
 		"type": "git",
@@ -18,5 +18,7 @@
 		"url": "https://github.com/carloxdev/stx-vanilla/issues"
 	},
 	"homepage": "https://github.com/carloxdev/stx-vanilla#readme",
-	"devDependencies": {}
+	"devDependencies": {
+		"normalize.css": "^8.0.1"
+	}
 }
