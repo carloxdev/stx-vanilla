@@ -75,7 +75,6 @@
         display: none;
     }
 
-
 @media (min-width: 576px) {
 
     .navbar-title {
@@ -130,6 +129,47 @@
 
         font-weight: 600;
     }
+
+        .navbar-out-button {
+            border: none;
+            font-family: inherit;
+        
+            cursor: pointer;
+        
+            display: inline-block;
+        
+            outline: none;
+            position: relative;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            border-radius: 5px;
+            text-decoration: none;
+        
+            font-size: .8em;
+            padding-top: .2em;
+            padding-bottom: .2em;
+            padding-left: .5em;
+            padding-right: .5em;
+        
+            background: #cb4e4e;
+            color: #fff;
+            box-shadow: 0 6px #ab3c3c;
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+        }
+        
+        
+        .navbar-out-button:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+    
 }
 
 @media (min-width: 1200px) {

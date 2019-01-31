@@ -153,3 +153,10 @@
     box-shadow: 0 0 #9053a9;
     top: 6px;
 }
+
+
+.btn-disabled {
+    pointer-events: none;
+    background: #afafaf;
+    box-shadow: 0 6px grey;
+}
