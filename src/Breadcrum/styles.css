@@ -1,6 +1,6 @@
 .breadcrumb { 
     display: flex; 
-    margin-top: 1em;
+    margin-top: .5em;
     margin-bottom: 1em;
     padding-left: 0;
 }
@@ -25,10 +25,11 @@
         background-color: #428EFE;
         border-radius: 0 100px 100px 0;
         padding: .5em 1em .5em 2.5em;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); 
+        box-shadow: 4px 0px 9px 0px rgba(0, 0, 0, 0.4);
+        
 
-        font-size: 1em;
-        margin-left: -2em;
+        font-size: .8em;
+        margin-left: -1.5em;
     }
 
     .breadcrumb ul li:hover a {
@@ -47,8 +48,17 @@
         background-color: #16a085;
     }
 
-    /* .breadcrumb ul li.active + li a {
-        box-shadow: none;
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+    .breadcrumb {
+        margin-top: 1em;
     }
- */
-    
+
+        .breadcrumb ul li a {
+            font-size: 1em;
+            margin-left: -1.5em;
+        }
+
+}

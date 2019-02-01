@@ -4,7 +4,7 @@ export default class UserMenu {
 
     constructor () {
         this.container = document.getElementById("user-menu")
-        this.button = document.getElementById("navbar-user")
+        this.button = document.getElementById("main-bar-user")
 
         this.set_Events()
     }
@@ -36,13 +36,13 @@ export default class UserMenu {
         }
         else {
             this.container.classList.remove('user-menu--close')
-            this.button.classList.add('navbar-user--active')
+            this.button.classList.add('main-bar-user--active')
         }
     }
 
     close () {
         this.container.classList.add('user-menu--close')
-        this.button.classList.remove('navbar-user--active')
+        this.button.classList.remove('main-bar-user--active')
     }
 
     check_IsOpen () {

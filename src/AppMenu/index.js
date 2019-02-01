@@ -4,7 +4,7 @@ export default class AppMenu {
 
     constructor () {
         this.container = document.getElementById("menu")
-        this.button = document.getElementById("navbar-icon")
+        this.button = document.getElementById("main-bar-icon")
 
         this.items = document.getElementsByClassName("menu-item")
         this.set_Events()

@@ -4,7 +4,7 @@ import Spinner from '../../Spinner/index.js'
 import AppMenu from '../../AppMenu/index.js'
 import UserMenu from '../../UserMenu/index.js'
 
-import '../../NavBar/index.js'
+import '../../MainBar/index.js'
 
 import './styles.css'
 

@@ -1,4 +1,4 @@
-.navbar {
+.main-bar {
     background: rgba(54, 146, 231, 1);
     background: -moz-linear-gradient(top, rgba(54, 146, 231, 1) 0%, rgba(26, 116, 219, 1) 81%, rgba(26, 116, 219, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(54, 146, 231, 1)), color-stop(81%, rgba(26, 116, 219, 1)), color-stop(100%, rgba(26, 116, 219, 1)));
@@ -16,91 +16,91 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    -webkit-box-shadow: -1px 2px 13px 0px rgba(0, 0, 0, 0.48);
+    /* -webkit-box-shadow: -1px 2px 13px 0px rgba(0, 0, 0, 0.48);
     -moz-box-shadow: -1px 2px 13px 0px rgba(0, 0, 0, 0.48);
-    box-shadow: -1px 2px 13px 0px rgba(0, 0, 0, 0.48);
+    box-shadow: -1px 2px 13px 0px rgba(0, 0, 0, 0.48); */
 }
 
-    .navbar-icon {
+    .main-bar-icon {
         flex-grow: 0;
         cursor: pointer;
         align-self: center;
         padding: .45em .45em .42em .45em;
     }
-    .navbar-icon--active {
+    .main-bar-icon--active {
         background: rgba(54, 146, 231, 1);
         border-radius: 4px;
     }
-    .navbar-icon:hover {
+    .main-bar-icon:hover {
         background: rgba(54, 146, 231, 1);
         border-radius: 4px;
     }
 
-    .navbar-title {
+    .main-bar-title {
         flex-grow: 8;
         text-align: center;
         align-self: center;
         font-weight: 600;
     }
 
-    .navbar-user {
+    .main-bar-user {
         flex-grow: 0;
         cursor: pointer;
         align-self: center;
         padding: .45em;
         margin-right: .3em;
     }
-    .navbar-user--active {
+    .main-bar-user--active {
         background: rgba(54, 146, 231, 1);
         border-radius: 4px;
     }
-    .navbar-user:hover {
+    .main-bar-user:hover {
         background: rgba(54, 146, 231, 1);
         border-radius: 4px;
     }
 
-        .navbar-user-text {
+        .main-bar-user-text {
             display: none;
         }
 
-            .navbar-user-text-h1 {
+            .main-bar-user-text-h1 {
                 font-weight: 600;
             }
 
-        .navbar-user-row {
+        .main-bar-user-row {
             display: none;
         }
 
-    .navbar-out {
+    .main-bar-out {
         display: none;
     }
 
 @media (min-width: 576px) {
 
-    .navbar-title {
+    .main-bar-title {
         text-align: left;
         margin-left: .5em;
     }
 
-        .navbar-user-icon {
+        .main-bar-user-icon {
             margin-right: 5px;
         }
 
-        .navbar-user-text {
+        .main-bar-user-text {
             display: inline-block;
             margin-right: 5px;
         }
 
-            .navbar-user-text-h1 {
+            .main-bar-user-text-h1 {
                 display: block;
                 font-size: .8em;
             }
 
-            .navbar-user-text-h2 {
+            .main-bar-user-text-h2 {
                 display: none;
             }
 
-        .navbar-user-row {
+        .main-bar-user-row {
             display: inline-block;
             font-size: .8em;
         }
@@ -110,16 +110,16 @@
 
 @media (min-width: 768px) {
 
-    .navbar-title {
+    .main-bar-title {
         flex-grow: 7;
     }
 
-    .navbar-user {
+    .main-bar-user {
         flex-grow: 0;
         margin-right: .5em;
     }
 
-    .navbar-out {
+    .main-bar-out {
         flex-grow: 0;
         display: inline-block;
         text-align: right;
@@ -130,7 +130,7 @@
         font-weight: 600;
     }
 
-        .navbar-out-button {
+        .main-bar-out-button {
             border: none;
             font-family: inherit;
         
@@ -161,7 +161,7 @@
         }
         
         
-        .navbar-out-button:after {
+        .main-bar-out-button:after {
             content: '';
             position: absolute;
             z-index: -1;
@@ -174,39 +174,39 @@
 
 @media (min-width: 1200px) {
 
-    .navbar {
+    .main-bar {
         height: 3em;
     }
 
-        .navbar-icon {
+        .main-bar-icon {
             padding: .45em;
             margin-left: .5em;
         }
 
-        .navbar-user {
+        .main-bar-user {
             margin-right: 1em;
         }
 
-            .navbar-user-icon {
+            .main-bar-user-icon {
                 font-size: 2em;
             }
 
-                .navbar-user-text-h1 {
+                .main-bar-user-text-h1 {
                     text-align: center;
                     display: block;
                     margin-bottom: .2em;
                 }
-                .navbar-user-text-h2 {
+                .main-bar-user-text-h2 {
                     text-align: center;
                     display: block;
                     font-size: .5em;
                 }
 
-            .navbar-user-row {
+            .main-bar-user-row {
                 font-size: 1em;
             }
 
-        .navbar-out {
+        .main-bar-out {
             margin-top: .5em;
         }
 }
