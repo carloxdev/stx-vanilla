@@ -130,7 +130,7 @@
         font-weight: 600;
     }
 
-        .main-bar-out-button {
+        .main-bar-out-btn {
             border: none;
             font-family: inherit;
         
@@ -161,7 +161,7 @@
         }
         
         
-        .main-bar-out-button:after {
+        .main-bar-out-btn:after {
             content: '';
             position: absolute;
             z-index: -1;
@@ -169,7 +169,12 @@
             -moz-transition: all 0.3s;
             transition: all 0.3s;
         }
-    
+
+        .main-bar-out-btn:active {
+            box-shadow: 0 0 #ab3c3c;
+            top: 6px;
+        }
+        
 }
 
 @media (min-width: 1200px) {
