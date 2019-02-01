@@ -1,0 +1,68 @@
+.pages-bar {
+    margin: 0;
+    padding: 0;
+}
+
+    .pages-bar-pages {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+        .pages-bar-page-start {
+            padding: .4em;
+            border: 1px solid #0e83cd;
+            border-radius: 4px;
+            background-color: #0e83cd;
+            color: white;
+            text-decoration: none;
+            margin-right: .1em;
+        }
+
+        .pages-bar-page-previous {
+            padding: .4em;
+            border: 1px solid #0e83cd;
+            border-radius: 4px;
+            background-color: #0e83cd;
+            color: white;
+            text-decoration: none;
+            margin-right: .1em;
+        }
+
+        .pages-bar-page-current {
+            padding: .4em;
+            /*background-color: #0e83cd;*/
+            color: #626262;
+            margin-right: .1em;
+        }
+
+        .pages-bar-page-next {
+            padding: .4em;
+            border: 1px solid #0e83cd;
+            border-radius: 4px;
+            background-color: #0e83cd;
+            color: white;
+            text-decoration: none;
+            margin-right: .1em;
+        }
+
+        .pages-bar-page-last {
+            padding: .4em;
+            border: 1px solid #0e83cd;
+            border-radius: 4px;
+            background-color: #0e83cd;
+            color: white;
+            text-decoration: none;
+        }
+
+    .pages-bar-filtered {
+        display: none;
+    }
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .pages-bar-pages {
+        margin-top: 1em;
+    }
+}
