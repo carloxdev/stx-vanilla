@@ -1,0 +1,90 @@
+.date {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2em;
+}
+
+    .date-label {
+        display: block;
+        text-align: left;
+    }
+    .date-label--error {
+        color: #cb4e4e;
+        font-weight: 600;
+    }
+
+        .date-label-optional {
+            color: #959595;
+            font-size: .8em;
+        }
+
+    .date-input {
+        width: 100%;
+        margin: 8px 0 0 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+
+        box-shadow: inset 0 1px 3px #ddd;
+        border-radius: 4px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        padding: 10px 20px !important;
+        height: 40px;
+        background-color: #ffffff;
+    }
+    .date-input:focus {
+        outline: none;
+        background-color: rgb(250, 255, 189)
+    }
+    .date-input--error {
+        border: 1px solid #cb4e4e;
+    }
+
+    .date-errors {
+        margin-top: 3px;
+        background-color: #cb4e4e;
+        border-radius: 4px;
+    }
+        .date-errors-list {
+            padding-left: 1em;
+            color: white;
+            font-size: .8em;
+            list-style-type: none;
+        }
+
+    .date-help {
+        margin-top: 5px;
+        color: #606060;
+        font-size: .8em;
+    }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .date {
+        width: 40%;
+        padding: .5em;
+        flex-grow: 1;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .date {
+        width: 30%;
+    }
+}

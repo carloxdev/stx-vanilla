@@ -35,6 +35,11 @@ body {
             padding: 1em;
         }
 
+            .content-header {
+                display: flex;
+                flex-direction: column;
+            }            
+
     .footer {
         flex-shrink: 0;
         padding: 1em .5em;
@@ -56,11 +61,17 @@ body {
 
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
+    
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .content-header {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */

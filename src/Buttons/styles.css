@@ -35,9 +35,9 @@
 }
 
 .btn-normal {
-    font-size: 1em;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    font-size: .8em;
+    padding-top: .4em;
+    padding-bottom: .4em;
     padding-left: .5em;
     padding-right: .5em;
 }
@@ -154,9 +154,20 @@
     top: 6px;
 }
 
-
 .btn-disabled {
     pointer-events: none;
     background: #afafaf;
     box-shadow: 0 6px grey;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .btn-normal {
+        font-size: 1em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-left: .5em;
+        padding-right: .5em;
+    }
 }

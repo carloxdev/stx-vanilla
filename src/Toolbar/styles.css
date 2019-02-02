@@ -1,0 +1,96 @@
+.toolbar {
+    display: flex;
+    margin-top: .5em;
+    
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+    .toobar-search {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    
+        margin-bottom: .5em;
+        justify-content: center;
+    }
+    
+        .toobar-search-input-group {
+            display: flex;
+            flex-direction: row;
+            width: auto;
+        }
+            .toobar-search-input {
+                position: relative;
+                font-size: .9em;
+            }
+                .toobar-search-input input {
+                    border-radius: 24px 0 0 24px;
+                    border: 1px solid #ccc;
+                    border-right: 0;
+                    padding-left: 40px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    height: 38px;
+                }
+                .toobar-search-input input:focus {
+                    outline: none;
+                    background-color: rgb(250, 255, 189)
+                }
+                .toobar-search-input-icon {
+                    position: absolute;
+                    left: 4px;
+                    top: 9px;
+                    padding: 0 8px;
+                    font-size: 21px;
+                    color: #295268;
+                }
+            .toobar-search-btn-show {
+                border: 1px solid #ccc;
+                background: #fff; 
+                color: #295268;
+                padding-top: 0;
+                padding-bottom: 0;
+                border-right: 0;
+            }
+                .toobar-search-btn-show-title {
+                    display: none;
+                }                
+    
+            .toobar-search-btn {
+                border-radius: 0 24px 24px 0;
+                border: 3px solid #0e83cd;
+                color: white;
+                background: #0e83cd;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+    
+    .toolbar-actions {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .toolbar { 
+        flex-direction: column;
+    }
+
+        .toolbar-actions { 
+            justify-content: flex-end;
+        }
+
+        .toobar-search {
+            justify-content: flex-end;
+        }
+}
+

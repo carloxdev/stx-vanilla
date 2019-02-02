@@ -1,64 +1,91 @@
 .breadcrumb { 
     display: flex; 
     margin-top: .5em;
-    margin-bottom: 1em;
     padding-left: 0;
+    flex-direction: column;
 }
 
-    .breadcrumb ul {
-        list-style: none;
-        display: flex; 
-        flex-wrap: nowrap;
-        flex-direction: row-reverse; 
+    .breadcrumb-path {
+        display: flex;
+        margin-bottom: 1.5em;
+    }
+
+        .breadcrumb-path ul {
+            list-style: none;
+            display: flex; 
+            flex-wrap: nowrap;
+            flex-direction: row-reverse; 
+            
+            margin: 0;
+            padding: 0;
+        }
+
+        .breadcrumb-path ul li {
+            margin: 0;
+        }
+
+        .breadcrumb-path ul li a {
+            text-decoration: none;
+            color: white;
+            background-color: #428EFE;
+            border-radius: 0 100px 100px 0;
+            padding: .5em 1em .5em 2.5em;
+            box-shadow: 4px 0px 9px 0px rgba(0, 0, 0, 0.4);
+
+            font-size: .8em;
+            margin-left: -1.5em;
+        }
+
+        .breadcrumb-path ul li:hover a {
+            background-color: #297EFE;
+        }
+
+        .breadcrumb-path ul li:first-child a {
+            box-shadow: none;
+        }
+
+        .breadcrumb-path ul li:last-child a {
+            padding-left: 2em;
+        }
         
-        margin: 0;
-        padding: 0;
-    }
+        .breadcrumb-path ul li.active a {
+            background-color: #16a085;
+        }
 
-    .breadcrumb ul li {
-        margin: 0;
-    }
-
-    .breadcrumb ul li a {
-        text-decoration: none;
-        color: white;
-        background-color: #428EFE;
-        border-radius: 0 100px 100px 0;
-        padding: .5em 1em .5em 2.5em;
-        box-shadow: 4px 0px 9px 0px rgba(0, 0, 0, 0.4);
-        
-
-        font-size: .8em;
-        margin-left: -1.5em;
-    }
-
-    .breadcrumb ul li:hover a {
-        background-color: #297EFE;
-    }
-
-    .breadcrumb ul li:first-child a {
-        box-shadow: none;
-    }
-
-    .breadcrumb ul li:last-child a {
-        padding-left: 2em;
-    }
-    
-    .breadcrumb ul li.active a {
-        background-color: #16a085;
+    .breadcrumb-title {
+        color: #626262;
+        font-size: 1.5em;
+        /* margin-bottom: .5em; */
+        text-align: center;
+        font-weight: 600;
     }
 
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
+    .breadcrumb {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 768px) { 
 
     .breadcrumb {
         margin-top: 1em;
+        flex-direction: column-reverse;
     }
 
-        .breadcrumb ul li a {
-            font-size: 1em;
-            margin-left: -1.5em;
+        .breadcrumb-title {
+            color: #626262;
+            font-size: 2em;
+
+            text-align: left;
+            font-weight: 600;
+            margin-bottom: .5em;
         }
 
+        .breadcrumb-path ul li a {
+            margin-left: -1.5em;
+        }
 }
