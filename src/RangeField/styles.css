@@ -1,0 +1,96 @@
+.range {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2em;
+}
+
+    .range-label {
+        display: block;
+        text-align: left;
+    }
+    .range-label--error {
+        color: #cb4e4e;
+        font-weight: 600;
+    }
+
+        .range-label-optional {
+            color: #959595;
+            font-size: .8em;
+        }
+
+    .range-fields {
+        text-align: center;
+    }
+
+        .range-input {
+            width: 45%;
+            margin: 8px 0 0 0;
+            margin-left: .3em;
+            margin-bottom: .3em;
+            display: inline-block;
+            border: 1px solid #ccc;
+
+            box-shadow: inset 0 1px 3px #ddd;
+            border-radius: 4px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+            padding: 10px 20px !important;
+            height: 40px;
+            background-color: #ffffff;
+        }
+        .range-input:focus {
+            outline: none;
+            background-color: rgb(250, 255, 189)
+        }
+        .range-input--error {
+            border: 1px solid #cb4e4e;
+        }
+
+        .range-errors {
+            margin-top: 3px;
+            background-color: #cb4e4e;
+            border-radius: 4px;
+        }
+            .range-errors-list {
+                padding-left: 1em;
+                color: white;
+                font-size: .8em;
+                list-style-type: none;
+            }
+
+    .range-help {
+        margin-top: 5px;
+        color: #606060;
+        font-size: .8em;
+    }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+    .range {
+        width: 40%;
+        padding: .5em;
+        flex-grow: 1;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .range {
+        width: 30%;
+    }
+}
