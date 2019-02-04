@@ -5,7 +5,7 @@ import './styles.css'
 export default class ToolbarSearch {
 
     constructor () {
-        this.btn_show = document.getElementById("toobar-search-btn-show")
+        this.btn_show = document.getElementById("toolbar-search-btn-show")
         this.modal_filters = new ModalFilters()
 
         this.set_Events()
