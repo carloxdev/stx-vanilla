@@ -38,7 +38,8 @@ body {
             .content-header {
                 display: flex;
                 flex-direction: column;
-            }            
+                margin-bottom: 1em;
+            }
 
     .footer {
         flex-shrink: 0;
