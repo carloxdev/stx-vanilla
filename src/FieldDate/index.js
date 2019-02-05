@@ -7,12 +7,28 @@ var moment = require('moment')
 
 export default class FieldDate {
 
-    constructor (id) {
+    constructor (_id, _type) {
+
+        let init_format = ""
+        let enable_time = false
+        if (_type=="date") {
+            init_format = 'd/m/Y'
+            enable_time = false
+            this.return_format = "YYYY-MM-DD"
+        }
+
+        if(_type=="datetime") { 
+            init_format = 'd/m/Y H:i'
+            enable_time = true
+            this.return_format = "YYYY-MM-DD HH:mm:ss"
+        }
+
         this.container = flatpickr(
-            '#' + id,
+            '#' + _id,
             {
-                dateFormat: 'd/m/Y',
-                locale: Spanish
+                dateFormat: init_format,
+                locale: Spanish,
+                enableTime: enable_time
             }
         )
     }
@@ -22,9 +38,7 @@ export default class FieldDate {
     }
 
     get_Value () {
-        var date = moment(this.container.latestSelectedDateObj)
-        return date.format(
-            "YYYY-MM-DD"
-        )
+        let date = moment(this.container.latestSelectedDateObj)
+        return date.format(this.return_format)
     }
 }
