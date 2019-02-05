@@ -1,0 +1,75 @@
+
+.msg {
+    display: table;
+    width: 100%;
+
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background-color: #263238;
+    border-radius: 4px;
+
+    margin-bottom: 1em;
+}
+
+.msg--close {
+    display: none;
+}
+
+    .msg-image {
+        display: table-cell;
+        vertical-align: middle;
+
+        padding: 25px 0 25px 0;
+
+        min-width: 60px;
+        text-align: center;
+        font-size: 2em;
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    .msg-body {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+        width: 100%;
+        padding-right: 3em;
+    }
+
+      .msg-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 29px;
+        line-height: 30px;
+        font-size: 24px;
+        text-align: center;
+        color: white;
+        /* background-color: rgba(0, 0, 0, 0.25); */
+        /* opacity: 0; */
+        transition: all 0.25s;
+      }
+      /* .msg-close:hover {
+        background-color: rgba(0, 0, 0, 0.15);
+      }
+      .msg:hover .msg-close {
+        opacity: 1;
+      } */
+
+
+.msg--success {
+    background-color: #39833C;
+}
+
+.msg--warning {
+    background-color: #FFC107;
+}
+
+.msg--error {
+    background-color: #d50000;
+}
+
+.msg--info {
+    background-color: #03A9F4;
+}
