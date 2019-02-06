@@ -86,6 +86,14 @@
         justify-content: center;
     }
 
+        .toolbar-actions-controls a {
+            font-size: .8em;
+            padding-top: .4em;
+            padding-bottom: .4em;
+            padding-left: .5em;
+            padding-right: .5em;
+        }
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
@@ -125,6 +133,14 @@
 
         .toolbar-actions { 
             justify-content: flex-end;
+        }
+
+        .toolbar-actions-controls a {
+            font-size: 1em;
+            padding-top: .5em;
+            padding-bottom: .5em;
+            padding-left: .5em;
+            padding-right: .5em;
         }
 
         .toolbar-search {
