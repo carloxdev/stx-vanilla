@@ -37,7 +37,8 @@
             }
 
             .record-header-data .data-value {
-                display: inline-block;
+                align-items: center;
+                display: flex;
                 font-weight: 600;
                 padding: 5px;
                 border-radius: 4px;
@@ -255,7 +256,7 @@
 @media (min-width: 992px) {
 
     .record {
-        margin-bottom: .5em;
+        margin-bottom: .1em;
     }
 
         .record-header {
@@ -284,14 +285,18 @@
                     width: 100%;
                     font-weight: 600;
                     text-transform: uppercase;
+
+                    position: absolute;
+                    margin-top: -18px;
                 }
 
                 .record-header-data .data-value {
                     font-size: .9em;
                 }
 
-                .record-header--default {
-                    padding: 0 !important;
+                .record-header--default {                    
+                    display: flex;
+                    padding: 10px 10px 0 10px !important;
                     width: 100%;
                     text-align: left !important;
                 }
@@ -300,19 +305,31 @@
                 flex-wrap: nowrap;
                 padding: 0;
                 border-right: 0;
+                width: 83%;
             }
                 .record-body-rows-data {
                     padding-bottom: 0;
                     border-right: 1px solid #d4d9dd;
                 }
+                .record-body-rows-data:last-child { 
+                    border-right: none;
+                }
+                    
                     .record-body-rows-data .data-label {
                         display: none;
+                    }
+
+                    .record-body-rows-data .data-value {
+                        box-sizing: border-box;
+                        padding: 6px 10px 5px 10px !important;
                     }
 
                     .record:first-child .record-body .record-body-rows .record-body-rows-data .data-label {
                         display: block;
                         font-weight: 600;
                         text-transform: uppercase;
+                        position: absolute;
+                        margin-top: -18px;
                     }
                     .record:first-child .record-body .record-body-rows .record-body-rows-data .data-label::after { 
                         content: " ";
@@ -320,7 +337,29 @@
 
                     .record-body-rows-data .data-value {
                         font-size: .9em;
-                    }    
+                    }
+
+            .record-body-controls {
+                box-sizing: border-box;
+                border-left: 1px solid #d4d9dd;
+
+                width: 17%; 
+                padding: .5em 0 .9em 0 !important;
+                flex-direction: row;
+                /* flex-direction: wrap; */
+                justify-content: space-around;
+            }
+
+                .record-body-controls a,
+                .record-body-controls button {
+                    height: 1.5em;
+                    font-size: .8em;
+                    padding-top: .7em;
+                    padding-bottom: .2em;
+                    padding-left: .5em;
+                    padding-right: .5em;
+                }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
