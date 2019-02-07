@@ -1,0 +1,10 @@
+.list-empty {
+    background: #f8f8f8;
+    padding: 14px 16px;
+    border: 1px solid #d4d9dd;
+    border-radius: 4px;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+}

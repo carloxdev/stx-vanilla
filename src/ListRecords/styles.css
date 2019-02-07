@@ -1,4 +1,4 @@
-.list-records {
+.list-cards {
     margin-bottom: 1em;
 
     display: flex;
@@ -10,7 +10,7 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
-    .list-records {
+    .list-cards {
         flex-direction: row;
         justify-content: space-around;
     }
@@ -20,7 +20,7 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-    .list-records {
+    .list-cards {
         margin-top: 1em;
     }
 

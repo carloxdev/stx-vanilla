@@ -1,4 +1,4 @@
-.list-tables {
+.list-cards {
     margin-bottom: 1em;
 
     display: flex;
@@ -10,7 +10,7 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
-    .list-tables {
+    .list-cards {
         flex-direction: row;
         justify-content: space-around;
     }
