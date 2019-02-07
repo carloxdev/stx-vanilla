@@ -24,7 +24,7 @@
             display: flex;
         }
 
-            .table-header-left {
+            .table-header-data:first-child {
                 text-align: left;
                 display: inline-block;
                 font-weight: 600;
@@ -32,64 +32,54 @@
                 border-radius: 4px;
             }
 
-            .table-header-left--default {
-                color: black;
-                background-color: white;
-            }
-
-            .table-header-left--green {
-                color: white;
-                background-color: #1c9a51;
-            }
-
-            .table-header-left--blue {
-                color: white;
-                background-color: #1d78dc;
-            }
-
-            .table-header-left--red {
-                color: white;
-                background-color: #f06060;
-            }
-
-            .table-header-right {
+            .table-header-data:last-child {
                 text-align: right;
                 display: inline-block;
                 margin-left: auto;
                 font-weight: 600;
                 padding: 5px;
                 border-radius: 4px;
-                /* font-size: 1em; */
             }
 
-            .table-header-right--blue { 
-                background-color: #1d78dc;
-                color: white;                    
-            }
-
-            .table-header-right--green {
-                background-color: #2ac56c;
-                color: white;
-            }
-
-            .table-header-right--red {
-                background-color: #f06060;
-                color: white;
-            }
-
-            .table-header-right--gray {
-                background-color: #696969;
-                color: white;
-            }
-
-            .table-header-right--yellow {
-                background-color: #ffe345;
+            .table-header--default {
                 color: black;
+                background-color: white;
             }
-            .table-header-right--purple {
-                background-color: #823aa0;
+
+            .table-header--green {
                 color: white;
-            }                 
+                background-color: #1c9a51;
+            }
+
+            /* .table-header--green {
+                color: white;
+                background-color: #2ac56c;
+            } */
+
+            .table-header--blue {
+                color: white;
+                background-color: #1d78dc;
+            }
+
+            .table-header--red {
+                color: white;
+                background-color: #f06060;
+            }
+
+            .table-header--gray {
+                color: white;
+                background-color: #696969;
+            }
+
+            .table-header--yellow {
+                color: black;
+                background-color: #ffe345;
+            }
+
+            .table-header--purple {
+                color: white;
+                background-color: #823aa0;
+            }                
 
         .table-body {
             height: auto;
@@ -133,7 +123,9 @@
                         font-size: .8em;
 
                         width: 100%;
-                        padding-right: .5em;
+                    }
+                    .table-body-rows-data .data-label::after {
+                        content: ": ";
                     }
                     .table-body-rows-data .data-value {
                         width: 100%;
@@ -195,7 +187,7 @@
                 .table-body-controls .btn-edit:active {
                     box-shadow: 0 0 #ffe345;
                     top: 6px;
-                }            
+                }
 
 
 /* Small devices (landscape phones, 576px and up) */
@@ -215,12 +207,12 @@
             justify-content: space-around;
         }
 
-            .table-header-left {
+            .table-header-data:first-child {
                 text-align: center;
                 margin-bottom: .5em;
             }
 
-            .table-header-right {
+            .table-header-data:last-child {
                 text-align: center;
                 margin-left: 0;
             }

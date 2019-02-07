@@ -12,6 +12,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+
     }
 
         .card-header {
@@ -23,7 +24,7 @@
             display: flex;
         }
 
-            .card-header-left {
+            .card-header-data:first-child {
                 text-align: left;
                 display: inline-block;
                 font-weight: 600;
@@ -31,63 +32,53 @@
                 border-radius: 4px;
             }
 
-            .card-header-left--default {
-                color: black;
-                background-color: white;
-            }
-
-            .card-header-left--green {
-                color: white;
-                background-color: #1c9a51;
-            }
-
-            .card-header-left--blue {
-                color: white;
-                background-color: #1d78dc;
-            }
-
-            .card-header-left--red {
-                color: white;
-                background-color: #f06060;
-            }
-
-            .card-header-right {
+            .card-header-data:last-child {
                 text-align: right;
                 display: inline-block;
                 margin-left: auto;
                 font-weight: 600;
                 padding: 5px;
                 border-radius: 4px;
-                /* font-size: 1em; */
             }
 
-            .card-header-right--blue { 
-                background-color: #1d78dc;
-                color: white;                    
-            }
-
-            .card-header-right--green {
-                background-color: #2ac56c;
-                color: white;
-            }
-
-            .card-header-right--red {
-                background-color: #f06060;
-                color: white;
-            }
-
-            .card-header-right--gray {
-                background-color: #696969;
-                color: white;
-            }
-
-            .card-header-right--yellow {
-                background-color: #ffe345;
+            .card-header--default {
                 color: black;
+                background-color: white;
             }
-            .card-header-right--purple {
-                background-color: #823aa0;
+
+            .card-header--green {
                 color: white;
+                background-color: #1c9a51;
+            }
+
+            /* .card-header--green {
+                color: white;
+                background-color: #2ac56c;
+            } */
+
+            .card-header--blue {
+                color: white;
+                background-color: #1d78dc;
+            }
+
+            .card-header--red {
+                color: white;
+                background-color: #f06060;
+            }
+
+            .card-header--gray {
+                color: white;
+                background-color: #696969;
+            }
+
+            .card-header--yellow {
+                color: black;
+                background-color: #ffe345;
+            }
+
+            .card-header--purple {
+                color: white;
+                background-color: #823aa0;
             }                 
 
         .card-body {
@@ -110,17 +101,21 @@
                 flex-wrap: wrap;
                 width: 100%;
                 box-sizing: border-box;
+                justify-content: space-between;
             }
 
                 .card-body-rows-data {
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     padding-bottom: .8em;
                     align-items: baseline;
-                    width: 100%
+                    width: 45%;
                 }
-                .table-body-rows-data--slim { 
-                    width: 50%
+                .card-body-rows-data--middle { 
+                    width: 95%
+                }
+                .card-body-rows-data--big { 
+                    width: 95% !important;
                 }
 
                     .card-body-rows-data .data-label {
@@ -128,7 +123,9 @@
                         font-size: .8em;
 
                         width: 100%;
-                        padding-right: .5em;
+                    }
+                    .card-body-rows-data .data-label::after {
+                        content: ": ";
                     }
                     .card-body-rows-data .data-value {
                         width: 100%;
@@ -190,8 +187,7 @@
                 .card-body-controls .btn-edit:active {
                     box-shadow: 0 0 #ffe345;
                     top: 6px;
-                }            
-
+                }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
