@@ -1,0 +1,302 @@
+
+    .record {
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.05);
+        
+        border: 1px solid #d4d9dd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        
+        overflow: hidden;
+        margin-bottom: 1em;
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+        .record-header {
+            background: #f8f8f8;
+            font-size: .9em;
+
+            padding: 10px 10px;
+            border-bottom: 1px solid #d4d9dd;
+            display: flex;
+        }
+
+            .record-header-left {
+                text-align: left;
+                display: inline-block;
+                font-weight: 600;
+                padding: 5px;
+                border-radius: 4px;
+            }
+
+            .record-header-left--default {
+                color: black;
+                background-color: white;
+            }
+
+            .record-header-left--green {
+                color: white;
+                background-color: #1c9a51;
+            }
+
+            .record-header-left--blue {
+                color: white;
+                background-color: #1d78dc;
+            }
+
+            .record-header-left--red {
+                color: white;
+                background-color: #f06060;
+            }
+
+            .record-header-right {
+                text-align: right;
+                display: inline-block;
+                margin-left: auto;
+                font-weight: 600;
+                padding: 5px;
+                border-radius: 4px;
+                /* font-size: 1em; */
+            }
+
+            .record-header-right--blue { 
+                background-color: #1d78dc;
+                color: white;                    
+            }
+
+            .record-header-right--green {
+                background-color: #2ac56c;
+                color: white;
+            }
+
+            .record-header-right--red {
+                background-color: #f06060;
+                color: white;
+            }
+
+            .record-header-right--gray {
+                background-color: #696969;
+                color: white;
+            }
+
+            .record-header-right--yellow {
+                background-color: #ffe345;
+                color: black;
+            }
+            .record-header-right--purple {
+                background-color: #823aa0;
+                color: white;
+            }                 
+
+        .record-body {
+            height: auto;
+            background: #ffffff;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            flex: 1 0 auto;
+            word-wrap: break-word;
+        }
+
+            .record-body-rows {
+                padding: 1em 1em .5em;
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                box-sizing: border-box;
+                justify-content: space-between;
+            }
+
+                .record-body-rows-data {
+                    display: flex;
+                    flex-direction: column;
+                    padding-bottom: .8em;
+                    align-items: baseline;
+                    width: 45%;
+                }
+                .record-body-rows-data--middle { 
+                    width: 95%
+                }
+                .record-body-rows-data--big { 
+                    width: 95% !important;
+                }
+
+                    .record-body-rows-data .data-label {
+                        color: #949494;
+                        font-size: .8em;
+
+                        width: 100%;
+                        padding-right: .5em;
+                    }
+                    .record-body-rows-data .data-value {
+                        width: 100%;
+                    }
+                    .record-body-rows-data .data-value:link {
+                        color: #3861c3;
+                    }
+                    .record-body-rows-data .data-value:visited {
+                        color: #3861c3;
+                    }
+
+            .record-body-controls {
+                background: #ffffff;
+
+                text-align: center;
+                padding-bottom: 1em;
+
+                display: flex;
+                justify-content: space-around;
+            }
+
+                .record-body-controls a,
+                .record-body-controls button {
+                    font-size: 1em;
+                    padding-top: .5em;
+                    padding-bottom: .5em;
+                    padding-left: .5em;
+                    padding-right: .5em;
+                }
+
+                .record-body-controls .btn-edit {
+                    border: none;
+                    font-family: inherit;
+                    color: inherit;
+                    cursor: pointer;
+                    outline: none;
+                    position: relative;
+                    -webkit-transition: all 0.3s;
+                    -moz-transition: all 0.3s;
+                    transition: all 0.3s;
+                    border-radius: 5px;
+                    text-decoration: none;
+
+                    background: #fcad26;
+                    color: white;
+                    box-shadow: 0 6px #cc8e24;
+                    -webkit-transition: none;
+                    -moz-transition: none;
+                    transition: none;
+                }
+                .record-body-controls .btn-edit:after {
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    -webkit-transition: all 0.3s;
+                    -moz-transition: all 0.3s;
+                    transition: all 0.3s;
+                }
+                .record-body-controls .btn-edit:active {
+                    box-shadow: 0 0 #ffe345;
+                    top: 6px;
+                }            
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    .table {
+        width: 100%;
+        flex-direction: row;
+    }
+
+        .record-header {
+            width: 20%;
+            border-bottom: none;
+            border-right: 1px solid #d4d9dd;
+
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+            .record-header-left {
+                text-align: center;
+                margin-bottom: .5em;
+            }
+
+            .record-header-right {
+                text-align: center;
+                margin-left: 0;
+            }
+
+        .record-body { 
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 80%;
+        }
+
+            .record-body-rows {
+                width: 80%;
+                border-right: 1px solid #d4d9dd;
+            }
+                .record-body-rows-data {
+                    width: 30%
+                }
+                .record-body-rows-data--middle { 
+                    width: 60%;
+                }
+
+
+            .record-body-controls {
+                box-sizing: border-box;
+                width: 20%;
+                padding: 0 1em;
+                padding-bottom: .5em;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .record-body-rows { 
+        width: 85%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* justify-content: space-around; */
+    }
+        .record-body-rows-data {
+            width: 24%;
+        }
+        .record-body-rows-data--middle {  
+            width: 48%;
+        }
+
+    .record-body-controls {
+        box-sizing: content-box;
+        width: 15%;
+        padding-top: 1em;
+    }
+
+        .record-body-controls a,
+        .record-body-controls button {
+            margin-bottom: 1em;
+        }
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+
+}
+ 
+/* Retina Desktops and up */
+@media (min-width: 2000px)  { 
+
+    
+}
+

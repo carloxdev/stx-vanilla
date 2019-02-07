@@ -2,7 +2,7 @@ import ModalFilters from '../ModalFilters/index.js'
 
 import './styles.css'
 
-export default class ToolbarSearch {
+export default class Toolbar {
 
     constructor () {
         this.btn_show = document.getElementById("toolbar-search-btn-show")
