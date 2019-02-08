@@ -285,6 +285,7 @@
 
             .card-header-data:first-child {
                 border-right: 1px solid #d4d9dd;
+                text-align: left;
             }
 
                 .card:first-child .card-header .card-header-data .data-label {
