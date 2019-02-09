@@ -243,16 +243,16 @@
 
                 .card:first-child .card-header .card-header-item .item-label {
                     display: flex;
-                    font-size: .8em;
-                    padding-left: .6em;
-                    padding-right: .6em;
-                    font-weight: 600;
-                    text-transform: uppercase;
+                    
+                    /* padding-left: .6em;
+                    padding-right: .6em; */
+                    /* font-weight: 600; */
+                    /* text-transform: uppercase; */
                     margin-top: 0px;
                     box-sizing: border-box;
                     word-break: break-word;
-
                     color: #949494;
+                    font-size: 11px;
 
                     position: absolute;
                     margin-top: -1.5em;
@@ -264,13 +264,13 @@
                     align-items: center;
                     box-sizing: border-box;
                     height: 100%;
-                    padding: .5em 1em;
+                    padding: .5em .1em;
                     width: 100%;
                 }
 
                     .card-header-item .item-data .data-value {
                         word-break: break-word;
-                        font-size: .9em;
+                        font-size: 11px;
                     }
 
         .card-body {
@@ -301,18 +301,18 @@
                         align-items: center;
                         box-sizing: border-box;
                         height: 100%;
-                        padding: .5em 1em;
-                        font-size: .9em;
+                        padding: .5em .3em;
+                        font-size: 11px;
                         width: 100%;
                     }
 
                     .card:first-child .card-body .card-body-items .card-body-item .item-label {
                         display: flex;
-                        font-size: .8em;
-                        padding-left: .6em;
-                        padding-right: .6em;
-                        font-weight: 600;
-                        text-transform: uppercase;
+                        font-size: 11px;
+                        /* padding-left: .6em;
+                        padding-right: .6em; */
+                        font-weight: 400;
+                        /* text-transform: uppercase; */
                         margin-top: 0px;
                         box-sizing: border-box;
                         position: absolute;
@@ -325,7 +325,7 @@
 
 
             .card-body-actions {
-                width: 20%; 
+                width: 10%; 
                 border-left: 1px solid #d4d9dd;
                 flex-direction: row;
                 box-sizing: border-box;
@@ -338,15 +338,15 @@
             }
 
                 .card-body-actions-item {
-                    width: 50%;
+                    width: 100%;
                     height: auto;
-                    padding: .5em .5em 1em;
+                    padding: .2em .2em .5em;
                     box-sizing: border-box;
                 }
 
                     .card-body-actions a,
                     .card-body-actions button {
-                        font-size: 1em;
+                        font-size: .8em;
                         padding-top: .5em;
                         padding-bottom: .5em;
                         padding-left: .5em;
