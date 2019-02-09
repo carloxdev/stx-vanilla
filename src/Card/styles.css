@@ -1,18 +1,16 @@
+.card {
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.05);
+    
+    border: 1px solid #d4d9dd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+    margin-bottom: 1em;
 
-    .card {
-        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.05);
-        
-        border: 1px solid #d4d9dd;
-        border-radius: 4px;
-        box-sizing: border-box;
-        
-        overflow: hidden;
-        margin-bottom: 1em;
-
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
     .card-header {
         background: #f8f8f8;
@@ -93,49 +91,57 @@
 
             display: flex;
             justify-content: space-around;
+            /* border: 1px solid red; */
         }
 
-            .card-body-actions a,
-            .card-body-actions button {
-                font-size: 1em;
-                padding-top: .5em;
-                padding-bottom: .5em;
-                padding-left: .5em;
-                padding-right: .5em;
+            .card-body-actions-item {
+                width: 50%;
+                /* border: 1px solid blue; */
             }
 
-            .card-body-actions .btn-edit {
-                border: none;
-                font-family: inherit;
-                color: inherit;
-                cursor: pointer;
-                outline: none;
-                position: relative;
-                -webkit-transition: all 0.3s;
-                -moz-transition: all 0.3s;
-                transition: all 0.3s;
-                border-radius: 5px;
-                text-decoration: none;
+                .card-body-actions a,
+                .card-body-actions button {
+                    display: inline-block;
+                    border: 1px solid black;
+                    font-size: 1em;
+                    padding-top: .5em;
+                    padding-bottom: .5em;
+                    padding-left: .5em;
+                    padding-right: .5em;
+                }
 
-                background: #fcad26;
-                color: white;
-                box-shadow: 0 6px #cc8e24;
-                -webkit-transition: none;
-                -moz-transition: none;
-                transition: none;
-            }
-            .card-body-actions .btn-edit:after {
-                content: '';
-                position: absolute;
-                z-index: -1;
-                -webkit-transition: all 0.3s;
-                -moz-transition: all 0.3s;
-                transition: all 0.3s;
-            }
-            .card-body-actions .btn-edit:active {
-                box-shadow: 0 0 #ffe345;
-                top: 6px;
-            }
+                .card-body-actions .btn-edit {
+                    border: none;
+                    font-family: inherit;
+                    color: inherit;
+                    cursor: pointer;
+                    outline: none;
+                    position: relative;
+                    -webkit-transition: all 0.3s;
+                    -moz-transition: all 0.3s;
+                    transition: all 0.3s;
+                    border-radius: 5px;
+                    text-decoration: none;
+
+                    background: #fcad26;
+                    color: white;
+                    box-shadow: 0 6px #cc8e24;
+                    -webkit-transition: none;
+                    -moz-transition: none;
+                    transition: none;
+                }
+                .card-body-actions .btn-edit:after {
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    -webkit-transition: all 0.3s;
+                    -moz-transition: all 0.3s;
+                    transition: all 0.3s;
+                }
+                .card-body-actions .btn-edit:active {
+                    box-shadow: 0 0 #ffe345;
+                    top: 6px;
+                }
 
 
 /* Small devices (landscape phones, 576px and up) */
