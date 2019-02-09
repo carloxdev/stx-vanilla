@@ -70,6 +70,7 @@
                         font-size: .8em;
                         font-weight: 600;
                         width: 100%;
+                        word-break: break-all;
                         word-break: break-word;
                     }
                     .card-body-item .item-label::after {
@@ -78,6 +79,7 @@
                     .card-body-item .item-value {
                         font-weight: 600;
                         width: 100%;
+                        word-break: break-all;
                         word-break: break-word;
                     }
                     .card-body-item .item-value:link {
@@ -243,13 +245,14 @@
 
                 .card:first-child .card-header .card-header-item .item-label {
                     display: flex;
-                    font-size: .8em;
+                    font-size: .7em;
                     padding-left: .6em;
                     padding-right: .6em;
                     font-weight: 600;
                     text-transform: uppercase;
                     margin-top: 0px;
                     box-sizing: border-box;
+                    word-break: break-all;
                     word-break: break-word;
 
                     color: #949494;
@@ -264,13 +267,14 @@
                     align-items: center;
                     box-sizing: border-box;
                     height: 100%;
-                    padding: .5em 1em;
+                    padding: .5em .5em;
                     width: 100%;
                 }
 
                     .card-header-item .item-data .data-value {
+                        word-break: break-all;
                         word-break: break-word;
-                        font-size: .9em;
+                        font-size: .8em;
                     }
 
         .card-body {
@@ -287,6 +291,7 @@
                 .card-body-item {
                     padding-bottom: 0;
                     border-right: 1px solid #d4d9dd;
+                    width: 100%;
                 }
                 .card-body-item:last-child { 
                     border-right: none;
@@ -296,19 +301,9 @@
                         display: none;
                     }
 
-                    .card-body-item .item-value {
-                        display: flex;
-                        align-items: center;
-                        box-sizing: border-box;
-                        height: 100%;
-                        padding: .5em 1em;
-                        font-size: .9em;
-                        width: 100%;
-                    }
-
                     .card:first-child .card-body .card-body-items .card-body-item .item-label {
                         display: flex;
-                        font-size: .8em;
+                        font-size: .7em;
                         padding-left: .6em;
                         padding-right: .6em;
                         font-weight: 600;
@@ -323,6 +318,15 @@
                         content: " ";
                     }
 
+                    .card-body-item .item-value {
+                        display: flex;
+                        align-items: center;
+                        box-sizing: border-box;
+                        height: 100%;
+                        padding: .5em .5em;
+                        font-size: .8em;
+                        width: 100%;
+                    }
 
             .card-body-actions {
                 width: 20%; 
@@ -340,13 +344,13 @@
                 .card-body-actions-item {
                     width: 50%;
                     height: auto;
-                    padding: .5em .5em 1em;
+                    padding: .1em .2em .5em;
                     box-sizing: border-box;
                 }
 
                     .card-body-actions a,
                     .card-body-actions button {
-                        font-size: 1em;
+                        font-size: .8em;
                         padding-top: .5em;
                         padding-bottom: .5em;
                         padding-left: .5em;

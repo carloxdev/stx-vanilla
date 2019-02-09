@@ -70,6 +70,7 @@
                         font-size: .8em;
                         font-weight: 600;
                         width: 100%;
+                        word-break: break-all;
                         word-break: break-word;
                     }
                     .card-body-item .item-label::after {
@@ -78,6 +79,7 @@
                     .card-body-item .item-value {
                         font-weight: 600;
                         width: 100%;
+                        word-break: break-all;
                         word-break: break-word;
                     }
                     .card-body-item .item-value:link {
@@ -250,6 +252,7 @@
                     /* text-transform: uppercase; */
                     margin-top: 0px;
                     box-sizing: border-box;
+                    word-break: break-all;
                     word-break: break-word;
                     color: #949494;
                     font-size: 11px;
@@ -269,6 +272,7 @@
                 }
 
                     .card-header-item .item-data .data-value {
+                        word-break: break-all;
                         word-break: break-word;
                         font-size: 11px;
                     }
@@ -287,6 +291,7 @@
                 .card-body-item {
                     padding-bottom: 0;
                     border-right: 1px solid #d4d9dd;
+                    width: 100%;
                 }
                 .card-body-item:last-child { 
                     border-right: none;
@@ -294,16 +299,6 @@
                     
                     .card-body-item .item-label {
                         display: none;
-                    }
-
-                    .card-body-item .item-value {
-                        display: flex;
-                        align-items: center;
-                        box-sizing: border-box;
-                        height: 100%;
-                        padding: .5em .3em;
-                        font-size: 11px;
-                        width: 100%;
                     }
 
                     .card:first-child .card-body .card-body-items .card-body-item .item-label {
@@ -323,6 +318,15 @@
                         content: " ";
                     }
 
+                    .card-body-item .item-value {
+                        display: flex;
+                        align-items: center;
+                        box-sizing: border-box;
+                        height: 100%;
+                        padding: .5em .3em;
+                        font-size: 11px;
+                        width: 100%;
+                    }
 
             .card-body-actions {
                 width: 10%; 
@@ -340,7 +344,7 @@
                 .card-body-actions-item {
                     width: 100%;
                     height: auto;
-                    padding: .2em .2em .5em;
+                    padding: .1em .2em .5em;
                     box-sizing: border-box;
                 }
 
