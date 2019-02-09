@@ -34,6 +34,7 @@
         display: table-cell;
         vertical-align: middle;
         text-align: center;
+        font-size: 1.2em;
 
         width: 100%;
         padding-right: 3em;
@@ -74,4 +75,27 @@
 
 .msg--info {
     background-color: #03A9F4;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) { 
+    .msg-body {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 992px) {
+    .msg-body {
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 2000px)  { 
+    .msg-body {
+        font-size: 1.5em;
+    }
 }
