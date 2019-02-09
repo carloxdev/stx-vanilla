@@ -12,186 +12,131 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-
     }
 
-        .card-header {
-            background: #f8f8f8;
-            font-size: .9em;
+    .card-header {
+        background: #f8f8f8;
 
-            padding: 10px 10px;
-            border-bottom: 1px solid #d4d9dd;
-            display: flex;
-        }
+        padding: 10px 10px;
+        border-bottom: 1px solid #d4d9dd;
+        display: flex;
+        justify-content: space-between;
+    }
 
-            .card-header-data:first-child {
-                text-align: left;
-            }
-
-            .card-header-data:last-child {
-                text-align: right;
-                margin-left: auto;
-            }
-
-            .card-header-data .data-label {
+            .card-header-item .item-label {
                 display: none;
             }
 
-            .card-header-data .data-value {
-                align-items: center;
-                display: flex;
-                font-weight: 600;
-                padding: 5px;
-                border-radius: 4px;
-            }  
 
-            .card-header--default {
-                color: black;
-                background-color: white;
-            }
+    .card-body {
+        height: auto;
+        background: #ffffff;
 
-            .card-header--green {
-                color: white;
-                background-color: #1c9a51;
-            }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-            /* .card-header--green {
-                color: white;
-                background-color: #2ac56c;
-            } */
+        flex: 1 0 auto;
+        word-wrap: break-word;
+    }
 
-            .card-header--blue {
-                color: white;
-                background-color: #1d78dc;
-            }
-
-            .card-header--red {
-                color: white;
-                background-color: #f06060;
-            }
-
-            .card-header--gray {
-                color: white;
-                background-color: #696969;
-            }
-
-            .card-header--yellow {
-                color: black;
-                background-color: #ffe345;
-            }
-
-            .card-header--purple {
-                color: white;
-                background-color: #823aa0;
-            }                 
-
-        .card-body {
-            height: auto;
-            background: #ffffff;
+        .card-body-items {
+            padding: 1em 1em .5em;
 
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            box-sizing: border-box;
             justify-content: space-between;
-
-            flex: 1 0 auto;
-            word-wrap: break-word;
         }
 
-            .card-body-rows {
-                padding: 1em 1em .5em;
-
+            .card-body-item {
                 display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                width: 100%;
-                box-sizing: border-box;
-                justify-content: space-between;
+                flex-direction: column;
+                padding-bottom: .8em;
+                align-items: baseline;
+                width: 45%;
+            }
+            .card-body-item--middle { 
+                width: 95%
+            }
+            .card-body-item--big { 
+                width: 95% !important;
             }
 
-                .card-body-rows-data {
-                    display: flex;
-                    flex-direction: column;
-                    padding-bottom: .8em;
-                    align-items: baseline;
-                    width: 45%;
+                .card-body-item .item-label {
+                    color: #949494;
+                    font-size: .8em;
+                    font-weight: 600;
+                    width: 100%;
                 }
-                .card-body-rows-data--middle { 
-                    width: 95%
+                .card-body-item .item-label::after {
+                    content: ": ";
                 }
-                .card-body-rows-data--big { 
-                    width: 95% !important;
+                .card-body-item .item-value {
+                    font-weight: 600;
+                    width: 100%;
+                }
+                .card-body-item .item-value:link {
+                    color: #3861c3;
+                }
+                .card-body-item .item-value:visited {
+                    color: #3861c3;
                 }
 
-                    .card-body-rows-data .data-label {
-                        color: #949494;
-                        font-size: .8em;
+        .card-body-actions {
+            background: #ffffff;
 
-                        width: 100%;
-                    }
-                    .card-body-rows-data .data-label::after {
-                        content: ": ";
-                    }
-                    .card-body-rows-data .data-value {
-                        width: 100%;
-                    }
-                    .card-body-rows-data .data-value:link {
-                        color: #3861c3;
-                    }
-                    .card-body-rows-data .data-value:visited {
-                        color: #3861c3;
-                    }
+            text-align: center;
+            padding-bottom: 1em;
 
-            .card-body-controls {
-                background: #ffffff;
+            display: flex;
+            justify-content: space-around;
+        }
 
-                text-align: center;
-                padding-bottom: 1em;
-
-                display: flex;
-                justify-content: space-around;
+            .card-body-actions a,
+            .card-body-actions button {
+                font-size: 1em;
+                padding-top: .5em;
+                padding-bottom: .5em;
+                padding-left: .5em;
+                padding-right: .5em;
             }
 
-                .card-body-controls a,
-                .card-body-controls button {
-                    font-size: 1em;
-                    padding-top: .5em;
-                    padding-bottom: .5em;
-                    padding-left: .5em;
-                    padding-right: .5em;
-                }
+            .card-body-actions .btn-edit {
+                border: none;
+                font-family: inherit;
+                color: inherit;
+                cursor: pointer;
+                outline: none;
+                position: relative;
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                transition: all 0.3s;
+                border-radius: 5px;
+                text-decoration: none;
 
-                .card-body-controls .btn-edit {
-                    border: none;
-                    font-family: inherit;
-                    color: inherit;
-                    cursor: pointer;
-                    outline: none;
-                    position: relative;
-                    -webkit-transition: all 0.3s;
-                    -moz-transition: all 0.3s;
-                    transition: all 0.3s;
-                    border-radius: 5px;
-                    text-decoration: none;
+                background: #fcad26;
+                color: white;
+                box-shadow: 0 6px #cc8e24;
+                -webkit-transition: none;
+                -moz-transition: none;
+                transition: none;
+            }
+            .card-body-actions .btn-edit:after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+            .card-body-actions .btn-edit:active {
+                box-shadow: 0 0 #ffe345;
+                top: 6px;
+            }
 
-                    background: #fcad26;
-                    color: white;
-                    box-shadow: 0 6px #cc8e24;
-                    -webkit-transition: none;
-                    -moz-transition: none;
-                    transition: none;
-                }
-                .card-body-controls .btn-edit:after {
-                    content: '';
-                    position: absolute;
-                    z-index: -1;
-                    -webkit-transition: all 0.3s;
-                    -moz-transition: all 0.3s;
-                    transition: all 0.3s;
-                }
-                .card-body-controls .btn-edit:active {
-                    box-shadow: 0 0 #ffe345;
-                    top: 6px;
-                }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -209,7 +154,7 @@
         width: 30%;
     }
 
-        .card-body-rows-data .data-value {
+        .card-body-item .item-data .data-value {
             font-size: .9em;
         }        
 }
@@ -225,14 +170,14 @@
 /* Retina Desktops and up */
 @media (min-width: 2000px)  { 
 
-    .card-body-rows {
+    .card-body-items {
         flex-direction: row;
         flex-wrap: wrap;
         
         justify-content: space-between;
     }
 
-        .card-body-rows-data {
+        .card-body-item {
             width: 50%;
         }
 

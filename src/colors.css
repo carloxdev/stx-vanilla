@@ -1,0 +1,39 @@
+.color-default {
+    color: black;
+    background-color: white;
+}
+
+.color-green {
+    color: white;
+    background-color: #1c9a51;
+}
+
+/* .color-green {
+    color: white;
+    background-color: #2ac56c;
+} */
+
+.color-blue {
+    color: white;
+    background-color: #1d78dc;
+}
+
+.color-red {
+    color: white;
+    background-color: #f06060;
+}
+
+.color-gray {
+    color: white;
+    background-color: #696969;
+}
+
+.color-yellow {
+    color: black;
+    background-color: #ffe345;
+}
+
+.color-purple {
+    color: white;
+    background-color: #823aa0;
+}    
