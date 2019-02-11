@@ -73,7 +73,7 @@
                         word-break: break-all;
                         word-break: break-word;
                     }
-                    .card-body-item .item-label::after {
+                    .card-body-item .item-label .label-value::after {
                         content: ": ";
                     }
                     .card-body-item .item-value {
@@ -312,14 +312,14 @@
                         margin-top: -1.5em;
                         width: 6em;
                     }
-                    .card:first-child .card-body .card-body-items .card-body-item .item-label::after { 
-                        content: " ";
-                    }
                     .card:first-child .card-body .card-body-items .card-body-item .item-label .label-value {
                         display: flex;
                         align-items: flex-end;
                         width: 6em;
                         height: 1em;
+                    }
+                    .card:first-child .card-body .card-body-items .card-body-item .item-label .label-value::after {
+                        content: " ";
                     }
 
                     .card-body-item .item-value {
@@ -329,6 +329,17 @@
                         height: 100%;
                         padding: .5em .3em;
                         font-size: 11px;
+                        width: 100%;
+                    }
+
+                    .card-body-item .item-icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-sizing: border-box;
+                        height: 100%;
+                        padding: .5em .3em;
+                        font-size: 1.5em;
                         width: 100%;
                     }
 
