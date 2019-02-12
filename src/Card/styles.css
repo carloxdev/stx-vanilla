@@ -26,6 +26,9 @@
                 display: none;
             }
 
+            .card-header-item .item-data {
+                font-size: .9em;
+            }
 
     .card-body {
         height: auto;
@@ -73,15 +76,9 @@
                 .card-body-item .item-label::after {
                     content: ": ";
                 }
-                .card-body-item .item-value {
+                .card-body-item .item-data {
                     font-weight: 600;
                     width: 100%;
-                }
-                .card-body-item .item-value:link {
-                    color: #3861c3;
-                }
-                .card-body-item .item-value:visited {
-                    color: #3861c3;
                 }
 
         .card-body-actions {
@@ -92,12 +89,10 @@
 
             display: flex;
             justify-content: space-around;
-            /* border: 1px solid red; */
         }
 
             .card-body-actions-item {
                 width: 50%;
-                /* border: 1px solid blue; */
             }
 
                 .card-body-actions a,

@@ -27,6 +27,9 @@
                     display: none;
                 }
 
+                .card-header-item .item-data {
+                    font-size: .9em;
+                }
 
         .card-body {
             height: auto;
@@ -73,20 +76,14 @@
                         word-break: break-all;
                         word-break: break-word;
                     }
-                    .card-body-item .item-label::after {
-                        content: ": ";
-                    }
-                    .card-body-item .item-value {
+                    .card-body-item .item-data {
                         font-weight: 600;
                         width: 100%;
                         word-break: break-all;
                         word-break: break-word;
                     }
-                    .card-body-item .item-value:link {
-                        color: #3861c3;
-                    }
-                    .card-body-item .item-value:visited {
-                        color: #3861c3;
+                    .card-body-item .item-label .label-value::after {
+                        content: ": ";
                     }
 
             .card-body-actions {
@@ -97,12 +94,10 @@
 
                 display: flex;
                 justify-content: space-around;
-                /* border: 1px solid red; */
             }
 
                 .card-body-actions-item {
                     width: 50%;
-                    /* border: 1px solid blue; */
                 }
 
                     .card-body-actions a,
@@ -161,7 +156,6 @@
         .card-header {
             width: 18%;
             border-bottom: none;
-            border-right: 1px solid #d4d9dd;
 
             flex-direction: column;
             justify-content: space-around;
@@ -183,7 +177,8 @@
 
             .card-body-items {
                 width: 80%;
-                border-right: 1px solid #d4d9dd;
+                border-left: 1px solid #d4d9dd;
+                flex: 1;
             }
                 .card-body-item {
                     width: 30%
@@ -199,6 +194,7 @@
                 padding-bottom: 0; 
                 flex-direction: column;
                 justify-content: space-around;
+                border-left: 1px solid #d4d9dd;
             }
 
                 .card-body-actions-item {
@@ -262,6 +258,13 @@
                     width: auto;
                 }
 
+                    .card:first-child .card-header .card-header-item .item-label .label-value {
+                        display: flex;
+                        align-items: flex-end;
+                        width: 10em;
+                        height: 1em;                        
+                    }
+
                 .card-header-item .item-data {
                     display: flex;
                     align-items: center;
@@ -314,13 +317,83 @@
                         margin-top: -1.5em;
                         width: auto;
                     }
-                    .card:first-child .card-body .card-body-items .card-body-item .item-label::after { 
+                    .card:first-child .card-body .card-body-items .card-body-item .item-label .label-value {
+                        display: flex;
+                        align-items: flex-end;
+                        width: 10em;
+                        height: 1em;
+                    }
+                    .card:first-child .card-body .card-body-items .card-body-item .item-label .label-value::after {
                         content: " ";
                     }
 
-                    .card-body-item .item-value {
+                    .card-body-item .item-data {
                         display: flex;
                         align-items: center;
+                        box-sizing: border-box;
+                        height: 100%;
+                        padding: .5em .5em;
+                        font-size: .8em;
+                        width: 100%;
+                    }
+
+                    .card-body-item .item-currency {
+                        display: flex;
+                        align-items: center;
+                        box-sizing: border-box;
+                        height: 100%;
+                        padding: .5em .5em;
+                        font-size: .8em;
+                        width: 100%;
+                    }
+
+                        .card-body-item .item-currency .data-value {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+
+                            .card-body-item .item-currency .data-value .data-value-simbol {
+                                color: #949494;
+                            }
+
+
+                    .card-body-item .item-number {
+                        display: flex;
+                        align-items: center;
+                        box-sizing: border-box;
+                        height: 100%;
+                        padding: .5em .5em;
+                        font-size: .8em;
+                        width: 100%;
+                    }
+
+                        .card-body-item .item-number .data-value {
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-end;
+                        }
+
+                            .card-body-item .item-number .data-value .data-value-udm {
+                                padding-left: 1em;
+                                color: #949494;
+                            }
+
+                    .card-body-item .item-icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-sizing: border-box;
+                        height: 100%;
+                        padding: .5em .5em;
+                        font-size: .8em;
+                        width: 100%;
+                    }
+
+                    .card-body-item .item-btn { 
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         box-sizing: border-box;
                         height: 100%;
                         padding: .5em .5em;
@@ -333,12 +406,6 @@
                 border-left: 1px solid #d4d9dd;
                 flex-direction: row;
                 box-sizing: border-box;
-                /* flex-wrap: wrap; */
-                /* justify-content: space-around; */
-                
-                /* padding: .5em 0 .9em 0 !important;
-                
-                */
             }
 
                 .card-body-actions-item {

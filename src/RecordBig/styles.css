@@ -27,6 +27,10 @@
                     display: none;
                 }
 
+                .card-header-item .item-data {
+                    font-size: .9em;
+                }
+
 
         .card-body {
             height: auto;
@@ -73,21 +77,16 @@
                         word-break: break-all;
                         word-break: break-word;
                     }
-                    .card-body-item .item-label .label-value::after {
-                        content: ": ";
-                    }
-                    .card-body-item .item-value {
+                    .card-body-item .item-data {
                         font-weight: 600;
                         width: 100%;
                         word-break: break-all;
                         word-break: break-word;
                     }
-                    .card-body-item .item-value:link {
-                        color: #3861c3;
+                    .card-body-item .item-label .label-value::after {
+                        content: ": ";
                     }
-                    .card-body-item .item-value:visited {
-                        color: #3861c3;
-                    }
+
 
             .card-body-actions {
                 background: #ffffff;
@@ -159,7 +158,6 @@
         .card-header {
             width: 18%;
             border-bottom: none;
-            border-right: 1px solid #d4d9dd;
 
             flex-direction: column;
             justify-content: space-around;
@@ -181,7 +179,8 @@
 
             .card-body-items {
                 width: 80%;
-                border-right: 1px solid #d4d9dd;
+                border-left: 1px solid #d4d9dd;
+                flex: 1;
             }
                 .card-body-item {
                     width: 30%
@@ -197,6 +196,7 @@
                 padding-bottom: 0; 
                 flex-direction: column;
                 justify-content: space-around;
+                border-left: 1px solid #d4d9dd;
             }
 
                 .card-body-actions-item {
@@ -310,7 +310,7 @@
                         box-sizing: border-box;
                         position: absolute;
                         margin-top: -1.5em;
-                        width: 6em;
+                        width: auto;
                     }
                     .card:first-child .card-body .card-body-items .card-body-item .item-label .label-value {
                         display: flex;
@@ -322,7 +322,7 @@
                         content: " ";
                     }
 
-                    .card-body-item .item-value {
+                    .card-body-item .item-data {
                         display: flex;
                         align-items: center;
                         box-sizing: border-box;
@@ -332,6 +332,48 @@
                         width: 100%;
                     }
 
+                    .card-body-item .item-currency {
+                        display: flex;
+                        align-items: center;
+                        box-sizing: border-box;
+                        height: 100%;
+                        padding: .5em .5em;
+                        font-size: .8em;
+                        width: 100%;
+                    }
+
+                        .card-body-item .item-currency .data-value {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+
+                            .card-body-item .item-currency .data-value .data-value-simbol {
+                                color: #949494;
+                            }
+
+
+                    .card-body-item .item-number {
+                        display: flex;
+                        align-items: center;
+                        box-sizing: border-box;
+                        height: 100%;
+                        padding: .5em 1em 0 .5em;
+                        font-size: .8em;
+                        width: 100%;
+                    }
+
+                        .card-body-item .item-number .data-value {
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-end;
+                        }
+
+                            .card-body-item .item-number .data-value .data-value-udm {
+                                padding-left: 1em;
+                                color: #949494;
+                            }
+
                     .card-body-item .item-icon {
                         display: flex;
                         align-items: center;
@@ -340,6 +382,17 @@
                         height: 100%;
                         padding: .5em .3em;
                         font-size: 1.5em;
+                        width: 100%;
+                    }
+
+                    .card-body-item .item-btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-sizing: border-box;
+                        height: 100%;
+                        padding: .5em .3em;
+                        font-size: 11px;
                         width: 100%;
                     }
 
