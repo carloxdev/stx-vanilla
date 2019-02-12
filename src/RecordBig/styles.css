@@ -77,16 +77,18 @@
                         word-break: break-all;
                         word-break: break-word;
                     }
-                    .card-body-item .item-data {
+                        .card-body-item .item-label .label-value::after {
+                            content: ":";
+                        }
+
+                    .card-body-item .item-data,
+                    .card-body-item .item-number,
+                    .card-body-item .item-currency {
                         font-weight: 600;
                         width: 100%;
                         word-break: break-all;
                         word-break: break-word;
                     }
-                    .card-body-item .item-label .label-value::after {
-                        content: ": ";
-                    }
-
 
             .card-body-actions {
                 background: #ffffff;
