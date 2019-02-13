@@ -8,6 +8,7 @@
     .breadcrumb-path {
         display: flex;
         margin-bottom: 1.5em;
+        flex-wrap: nowrap;
     }
 
         .breadcrumb-path ul {
@@ -55,7 +56,6 @@
     .breadcrumb-title {
         color: #626262;
         font-size: 1.5em;
-        /* margin-bottom: .5em; */
         text-align: center;
         font-weight: 600;
     }
@@ -66,13 +66,20 @@
     .breadcrumb {
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 1em;
     }
+
+        .breadcrumb-title { 
+            text-align: right;
+        }
 }
 
 @media (min-width: 768px) { 
 
     .breadcrumb {
-        margin-top: 1em;
+        /* margin-top: 1em; */
+        margin-bottom: 0;
         flex-direction: column-reverse;
     }
 
