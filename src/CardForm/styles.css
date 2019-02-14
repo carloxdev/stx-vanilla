@@ -1,0 +1,112 @@
+.card-form {
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+
+    margin-bottom: 1em;
+}
+
+    .card-form-header {
+        position: relative;
+        padding: 14px 16px;
+
+        border: 1px solid #d4d9dd;
+        border-radius: 4px 4px 0 0;
+
+        background: #f8f8f8;
+        font-size: 14px;
+
+        display: flex;
+    }
+
+        .card-form-header-id {
+            background: #1D78DC;
+            color: white;
+            border-radius: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+    .card-form-header-history {
+        position: relative;
+        padding: 14px 16px;
+
+        border: 1px solid #d4d9dd;
+        border-radius: 4px 4px 0 0;
+
+        background: #f8f8f8;
+        font-size: 14px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .card-form-header-history-id {
+            background: #1D78DC;
+            color: white;
+            border-radius: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-top: 4px;
+            padding-bottom: 4px;        
+        }
+
+        .card-form-header-history-status {
+            background: rgb(98, 114, 131);
+            color: white;
+            border-radius: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-top: 4px;
+            padding-bottom: 4px;        
+        }
+
+        .card-form-header-history-link {
+            text-decoration: None;
+            color: white;
+            background-color: #7b7b7b;
+            border-radius: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        .card-form-header-history-link:visited {
+            color: white;
+            background-color: #7b7b7b;
+        }
+
+    .card-form-body {
+        border: 1px solid #d4d9dd;
+        border-top: 0;
+        border-bottom: 0;
+        border-radius: 0;
+        background: #ffffff;
+
+        padding: 1em;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card-form-footer {
+        padding: 1em;
+        text-align: right;
+        border-radius: 0 0 4px 4px;
+        background: #f8f8f8;
+        border: 1px solid #d4d9dd;
+    }
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    .card-form-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

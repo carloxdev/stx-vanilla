@@ -41,6 +41,30 @@ body {
                 margin-bottom: 1em;
             }
 
+            .content-body {
+                display: flex;
+                flex-direction: column;
+            }
+
+                .content-body .forms {
+                    width: 100%;   
+
+                    border: 1px solid black;
+                }
+
+                .content-body .asides {
+                    padding-top: 1em;
+
+                    width: 100%;
+
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 1em;
+
+                    border: 1px solid red;
+                }
+
+
     .footer {
         flex-shrink: 0;
         padding: 1em .5em;
@@ -64,6 +88,12 @@ body {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     
+
+    .content-body .asides { 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -77,6 +107,20 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+    .content-body {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+        .content-body .forms {
+            width: 74%;
+        }
+        
+        .content-body .asides {
+            width: 25%;
+            padding-top: 0;
+        }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
