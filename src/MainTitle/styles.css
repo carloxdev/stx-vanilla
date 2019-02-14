@@ -1,0 +1,13 @@
+.main-title {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+@media (min-width: 768px) {
+
+    .main-title {
+        font-size: 2em;
+        margin-top: .5em;
+        margin-bottom: 1em;        
+    }
+}
