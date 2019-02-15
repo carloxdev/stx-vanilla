@@ -128,6 +128,7 @@
 
     .toolbar { 
         flex-direction: column;
+        justify-content: initial;
         margin-top: .5em;
     }
 
