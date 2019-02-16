@@ -1,1 +1,1 @@
-import './stytes.css'
+import './styles.css'
