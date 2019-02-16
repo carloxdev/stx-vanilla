@@ -21,6 +21,7 @@
         border-bottom: 1px solid #d4d9dd;
         
         font-size: .9em;
+        font-weight: 600;
 
         display: flex;
     }
