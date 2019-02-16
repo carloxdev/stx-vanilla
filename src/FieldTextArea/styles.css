@@ -1,25 +1,25 @@
-.text-area {
+.textarea {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 1.2em;
 }
 
-    .text-area-label {
+    .textarea-label {
         display: block;
         text-align: left;
     }
-    .text-area-label--error {
+    .textarea-label--error {
         color: #cb4e4e;
         font-weight: 600;
     }
 
-        .text-area-label-optional {
+        .textarea-label-optional {
             color: #959595;
             font-size: .8em;
         }
 
-    .text-area-input {
+    .textarea-input {
         width: 100%;
         margin: 8px 0 0 0;
         display: inline-block;
@@ -33,27 +33,27 @@
         background-color: #ffffff;
         padding: 10px 20px 10px 10px !important;
     }
-    .text-area-input:focus {
+    .textarea-input:focus {
         outline: none;
         background-color: rgb(250, 255, 189)
     }
-    .text-area-input--error {
+    .textarea-input--error {
         border: 1px solid #cb4e4e;
     }
 
-    .text-area-errors {
+    .textarea-errors {
         margin-top: 3px;
         background-color: #cb4e4e;
         border-radius: 4px;
     }
-        .text-area-errors-list {
+        .textarea-errors-list {
             padding-left: 1em;
             color: white;
             font-size: .8em;
             list-style-type: none;
         }
 
-    .text-area-help {
+    .textarea-help {
         margin-top: 5px;
         color: #606060;
         font-size: .8em;
@@ -62,7 +62,7 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
-    .text-area {
+    .textarea {
         margin-bottom: 0;
     }
 
@@ -71,7 +71,7 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-    .text-area {
+    .textarea {
         width: 47%;
         padding: .5em;
         flex-grow: 1;
@@ -82,7 +82,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-    .text-area {
+    .textarea {
         width: 31%;
     }
 
