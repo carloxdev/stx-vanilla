@@ -1,5 +1,6 @@
 .list-empty {
     background: #f8f8f8;
+    box-sizing: border-box;
     padding: 14px 16px;
     border: 1px solid #d4d9dd;
     border-radius: 4px;

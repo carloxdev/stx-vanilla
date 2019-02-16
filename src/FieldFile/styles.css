@@ -1,70 +1,61 @@
-.select {
+.file {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 1.2em;
 }
 
-    .select-label {
+    .file-label {
         display: block;
         text-align: left;
     }
-    .select-label--error {
+    .file-label--error {
         color: #cb4e4e;
         font-weight: 600;
     }
 
-        .select-label-optional {
+        .file-label-optional {
             color: #959595;
             font-size: .8em;
         }
 
-    .select-input {
+    .file-input {
         width: 100%;
         margin: 8px 0 0 0;
         display: inline-block;
+        border: 1px solid #ccc;
+
         box-shadow: inset 0 1px 3px #ddd;
         border-radius: 4px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        min-height: 40px;
-        background-color: #ffffff;
+
+        padding: 10px 20px !important;
+        height: 40px;
+        background-color: #ffffff;        
     }
-
-        .ss-add {
-            margin: 14px 12px 0 5px !important;
-        }
-
-        .ss-multi-selected, .ss-single-selected {
-            min-height: 40px !important;
-        }
-
-        .ss-open {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-    .select-input:focus {
+    .file-input:focus {
         outline: none;
         background-color: rgb(250, 255, 189)
     }
-    .select-input--error {
+    .file-input--error {
         border: 1px solid #cb4e4e;
     }
 
-    .select-errors {
+    .file-errors {
         margin-top: 3px;
         background-color: #cb4e4e;
         border-radius: 4px;
     }
-        .select-errors-list {
+        .file-errors-list {
             padding-left: 1em;
             color: white;
             font-size: .8em;
             list-style-type: none;
         }
 
-    .select-help {
+    .file-help {
         margin-top: 5px;
         color: #606060;
         font-size: .8em;
@@ -72,7 +63,7 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .select {
+    .file {
         margin-bottom: 0;
     }
 }
@@ -80,17 +71,18 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-    .select {
+    .file {
         width: 47%;
         padding: .5em;
         flex-grow: 1;
     }
 }
 
+
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-    .select {
+    .file {
         width: 31%;
     }
 
@@ -100,5 +92,5 @@
 
         .x3 {
             width: 93% !important;
-        }
+        }    
 }

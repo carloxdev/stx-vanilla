@@ -1,96 +1,82 @@
-.select {
+.checkbox {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 1.2em;
 }
 
-    .select-label {
+    .checkbox-label {
         display: block;
         text-align: left;
     }
-    .select-label--error {
+    .checkbox-label--error {
         color: #cb4e4e;
         font-weight: 600;
     }
 
-        .select-label-optional {
+        .checkbox-label-optional {
             color: #959595;
             font-size: .8em;
         }
 
-    .select-input {
-        width: 100%;
+    .checkbox-title {
+        display: inline-block;
+    }
+
+    .checkbox-input {
+        width: 30%;
         margin: 8px 0 0 0;
         display: inline-block;
-        box-shadow: inset 0 1px 3px #ddd;
-        border-radius: 4px;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        min-height: 40px;
+        height: 40px;
         background-color: #ffffff;
+        text-align: center;
     }
-
-        .ss-add {
-            margin: 14px 12px 0 5px !important;
-        }
-
-        .ss-multi-selected, .ss-single-selected {
-            min-height: 40px !important;
-        }
-
-        .ss-open {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-    .select-input:focus {
-        outline: none;
-        background-color: rgb(250, 255, 189)
-    }
-    .select-input--error {
+    .checkbox-input--error {
         border: 1px solid #cb4e4e;
     }
 
-    .select-errors {
+    .checkbox-errors {
         margin-top: 3px;
         background-color: #cb4e4e;
         border-radius: 4px;
     }
-        .select-errors-list {
-            padding-left: 1em;
+        .checkbox-errors-list {
             color: white;
             font-size: .8em;
             list-style-type: none;
         }
 
-    .select-help {
+    .checkbox-help {
         margin-top: 5px;
         color: #606060;
         font-size: .8em;
     }
 
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .select {
+
+    .checkbox {
         margin-bottom: 0;
     }
 }
 
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-    .select {
+    .checkbox {
         width: 47%;
         padding: .5em;
         flex-grow: 1;
     }
 }
 
+
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-    .select {
+    .checkbox {
         width: 31%;
     }
 
@@ -102,3 +88,4 @@
             width: 93% !important;
         }
 }
+

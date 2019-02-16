@@ -8,7 +8,18 @@
     .text-label {
         display: block;
         text-align: left;
+        font-size: .9em;
+        font-weight: 600;
     }
+    .text-label--error {
+        color: #cb4e4e;
+        font-weight: 600;
+    }
+
+        .text-label-optional {
+            color: #959595;
+            font-size: .8em;
+        }
 
     .text-input {
         width: 100%;
@@ -32,20 +43,28 @@
         border: 1px solid #cb4e4e;
     }
 
-    .text-help {
-        margin-top: 5px;
-        color: #606060;
-        font-size: .8em;
-    }
+        .text-errors {
+            margin-top: 3px;
+            background-color: #cb4e4e;
+            border-radius: 4px;
+        }
+            .text-errors-list {
+                padding-left: 1em;
+                color: white;
+                font-size: .8em;
+                list-style-type: none;
+            }    
+
+        .text-help {
+            margin-top: 5px;
+            color: #606060;
+            font-size: .8em;
+        }
 
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .text {
-        /* width: 43%; */
-        /* padding-right: 1.9em; */
-        /* padding: .5em; */
-        padding-bottom: 1em;
         margin-bottom: 0;
     }
 }
@@ -55,7 +74,7 @@
 @media (min-width: 768px) {
 
     .text {
-        width: 40%;
+        width: 47%;
         padding: .5em;
         flex-grow: 1;
     }
@@ -64,7 +83,16 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
     .text {
-        width: 30%;
+        width: 31%;
     }
+
+        .x2 {
+            width: 62% !important;
+        }
+
+        .x3 {
+            width: 93% !important;
+        }
 }
