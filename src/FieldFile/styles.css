@@ -63,9 +63,7 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .file {
-        margin-bottom: 0;
-    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
