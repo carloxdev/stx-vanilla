@@ -1,6 +1,6 @@
 import './styles.css'
 
-export default class Image {
+export default class CardFormImage {
 
     constructor (_btn_image) {
         this.button_load = _btn_image
