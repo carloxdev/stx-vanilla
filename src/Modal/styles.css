@@ -98,16 +98,16 @@
                 padding: 1em 1em 2em;
             }
 
-                .modal-body-buttons a,
+                /* .modal-body-buttons a,
                 .modal-body-buttons button {
                     font-size: 1em;
                     padding-top: .5em;
                     padding-bottom: .5em;
                     padding-left: .5em;
                     padding-right: .5em;
-                }
+                } */
 
-                .remove-filters-btn {
+                /* .remove-filters-btn {
                     border: none;
                     font-family: inherit;
                     color: inherit;
@@ -171,7 +171,7 @@
                 .search-filters-btn:active {
                     box-shadow: 0 0 #55b7f3;
                     top: 6px;
-                }
+                } */
 
 /* Add Animation */
 @-webkit-keyframes animatetop {

@@ -8,6 +8,8 @@
     .range-label {
         display: block;
         text-align: left;
+        font-size: .9em;
+        font-weight: 600;
     }
     .range-label--error {
         color: #cb4e4e;
@@ -37,7 +39,7 @@
             -moz-box-sizing: border-box;
             box-sizing: border-box;
 
-            padding: 10px 20px !important;
+            padding: 10px 10px !important;
             height: 40px;
             background-color: #ffffff;
         }

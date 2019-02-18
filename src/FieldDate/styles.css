@@ -8,6 +8,8 @@
     .date-label {
         display: block;
         text-align: left;
+        font-size: .9em;
+        font-weight: 600;
     }
     .date-label--error {
         color: #cb4e4e;
@@ -31,7 +33,7 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         height: 40px;
-        padding: 10px 20px !important;
+        padding: 10px 10px !important;
         background-color: #ffffff;
     }
     .date-input:focus {

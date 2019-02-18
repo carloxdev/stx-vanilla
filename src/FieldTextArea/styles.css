@@ -8,6 +8,8 @@
     .textarea-label {
         display: block;
         text-align: left;
+        font-size: .9em;
+        font-weight: 600;
     }
     .textarea-label--error {
         color: #cb4e4e;
@@ -31,7 +33,7 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         background-color: #ffffff;
-        padding: 10px 20px 10px 10px !important;
+        padding: 10px 10px !important;
     }
     .textarea-input:focus {
         outline: none;
