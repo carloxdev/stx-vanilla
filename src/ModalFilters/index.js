@@ -4,8 +4,8 @@ class ModalFilters {
 
     constructor() {
         this.container = document.getElementById("modal-filters-id")
-        this.btn_close = document.getElementById('modal-filters-close')
         this.title = document.getElementById('modal-filters-title')
+        this.btn_close = document.getElementById('modal-filters-close')
         this.window = document
         this.set_Events()
     }
