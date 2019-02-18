@@ -1,4 +1,4 @@
-import ModalFilters from '../ModalFilters/index.js'
+import Modal from '../Modal/index.js'
 
 import './styles.css'
 
@@ -6,9 +6,18 @@ export default class Toolbar {
 
     constructor () {
         this.btn_show = document.getElementById("toolbar-search-btn-show")
-        this.modal_filters = new ModalFilters()
+        this.modal_filters = new Modal(
+            "modal-filter-id",
+            "modal-filter-title",
+            "modal-filter-close"
+        )
 
+        this.init()
         this.set_Events()
+    }
+
+    init() {
+        this.modal_filters
     }
 
     set_Events() {
