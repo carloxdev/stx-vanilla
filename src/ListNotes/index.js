@@ -22,7 +22,7 @@ export default class ListNotes {
             for (let item in data) {
                 let record = data[item]
                 let note = new Note()
-                note.set_Status(record.clave, record.nombre)
+                note.set_Status(record.status_nombre)
                 note.set_Date(record.date)
                 note.set_Comments(record.comments)
                 note.set_Created_Date(record.created_date)

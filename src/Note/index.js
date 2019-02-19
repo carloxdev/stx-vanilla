@@ -12,9 +12,9 @@ class Note {
         this.created_by_desc = ""
     }
 
-    set_Status(_clave, _nombre) {        
-        if (_clave) {
-            this.status = `${_clave} - ${_nombre}`
+    set_Status(_value) {
+        if (_value) {
+            this.status = _value
         }
     }
 
@@ -40,7 +40,7 @@ class Note {
 
     set_Created_By_Desc(_value) {
         if (_value) {
-            tbis.created_by_desc = _value
+            this.created_by_desc = _value
         }
     } 
 
