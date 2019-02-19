@@ -1,4 +1,4 @@
-import '../Note/index.js'
+import Note from '../Note/index.js'
 import '../ListEmpty/index.js'
 import './styles.css'
 
