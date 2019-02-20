@@ -2,16 +2,22 @@ import './styles.css'
 
 export default class CardFormImage {
 
-    constructor (_btn_image) {
-        this.button_load = _btn_image
-        this.preview = document.getElementById("imagecard-body-img")
+    constructor (_id) {
+        let query_view = `[data-card-img-view='${_id}']`
+        this.preview = document.querySelector(query_view)
+        console.log(this.preview)
+
+        let query_btn = `[data-card-img-btn='${_id}']`
+        this.button_load = document.querySelector(query_btn)
+        console.log(this.button_load)
+
         this.file_file = document.getElementById(
             this.button_load.getAttribute("for")
         )
-        this.init_Events()
+        this.set_Events()
     }
 
-    init_Events() {
+    set_Events() {
         this.file_file.addEventListener(
             "change",
             this.click_ButtonLoad.bind(this)
