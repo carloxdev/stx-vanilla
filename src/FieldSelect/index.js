@@ -26,6 +26,10 @@ export default class FieldSelect {
     //     }
     // }
 
+    select_Option(_opt) {
+        this.container.set(_opt)
+    }    
+
     add_Option (id, text) {
         this.container.destroy()
 
