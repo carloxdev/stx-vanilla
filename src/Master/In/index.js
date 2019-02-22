@@ -9,7 +9,7 @@ import '../../MainBar/index.js'
 import './styles.css'
 
 
-export default class AppMasterIn {
+class AppMasterIn {
 
     constructor (_main, _BtnLogoutId, _MenuLogoutId ) {
         this.container = document.getElementById(_main)
@@ -23,3 +23,5 @@ export default class AppMasterIn {
     }
 }
 
+
+export default AppMasterIn

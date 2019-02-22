@@ -28,6 +28,9 @@
 	line-height: 27px;
 	font-size: 1em;
 	font-weight: 600;
+
+	text-decoration: none;
+	display: inline-block;	
 }
 
 .btn-go-default span {
