@@ -9,6 +9,10 @@ body {
     font-style: normal;
     background-size: 100% auto;
     background-color: white;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 .wrapper {
