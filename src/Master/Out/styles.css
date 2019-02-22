@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    background-size: 100% auto;
+    background-color: white;
+}
+
+.wrapper {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+    .main {
+        flex: 1 0 auto;
+
+        background: rgba(54,146,231,1);
+        background: -moz-linear-gradient(top, rgba(54,146,231,1) 0%, rgba(26,116,219,1) 81%, rgba(26,116,219,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(54,146,231,1)), color-stop(81%, rgba(26,116,219,1)), color-stop(100%, rgba(26,116,219,1)));
+        background: -webkit-linear-gradient(top, rgba(54,146,231,1) 0%, rgba(26,116,219,1) 81%, rgba(26,116,219,1) 100%);
+        background: -o-linear-gradient(top, rgba(54,146,231,1) 0%, rgba(26,116,219,1) 81%, rgba(26,116,219,1) 100%);
+        background: -ms-linear-gradient(top, rgba(54,146,231,1) 0%, rgba(26,116,219,1) 81%, rgba(26,116,219,1) 100%);
+        background: linear-gradient(to bottom, rgba(54,146,231,1) 0%, rgba(26,116,219,1) 81%, rgba(26,116,219,1) 100%);
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-shrink: 0;
+        padding: 1em .5em;
+        text-align: center;
+        background-color: white;
+        border-top: 1px solid #d4d9dd;
+    }
+
+        .footer-text-left {
+            color: #454545;
+            margin-bottom: .5em;
+            font-size: .8em;
+        }
+
+        .footer-text-right {
+            font-size: .8em;
+            color: #8B9298;
+        }
+
