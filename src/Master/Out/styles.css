@@ -51,6 +51,7 @@ body {
             color: #454545;
             margin-bottom: .5em;
             font-size: .8em;
+            font-weight: 600;
         }
 
         .footer-text-right {
@@ -61,6 +62,7 @@ body {
             .footer-text-right a {
                 text-decoration: none;
                 font-weight: 600;
+                color: black;
             }
 
             .footer-text-right a:visited {

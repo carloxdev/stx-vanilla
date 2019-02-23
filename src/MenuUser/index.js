@@ -1,6 +1,6 @@
 import './styles.css'
 
-export default class UserMenu {
+export default class MenuUser {
 
     constructor () {
         this.container = document.getElementById("user-menu")

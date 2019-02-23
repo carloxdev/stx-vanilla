@@ -1,6 +1,6 @@
 import './styles.css'
 
-export default class AppMenu {
+class MenuApp {
 
     constructor () {
         this.container = document.getElementById("menu")
@@ -121,3 +121,6 @@ class SubMenu {
         }
     }
 }
+
+
+export default MenuApp;

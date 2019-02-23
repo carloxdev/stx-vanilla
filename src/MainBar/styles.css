@@ -40,7 +40,7 @@
         flex-grow: 8;
         text-align: center;
         align-self: center;
-        font-weight: 600;
+        font-weight: 700;
     }
 
     .main-bar-user {
@@ -64,6 +64,9 @@
         }
 
             .main-bar-user-text-h1 {
+                font-weight: 700;
+            }
+            .main-bar-user-text-h1 { 
                 font-weight: 600;
             }
 
@@ -126,8 +129,6 @@
         padding-top: .2em;
         padding-right: .3em;
         margin-right: .3em;
-
-        font-weight: 600;
     }
 
         .main-bar-out-btn {
@@ -158,6 +159,8 @@
             -webkit-transition: none;
             -moz-transition: none;
             transition: none;
+
+            font-weight: 700;
         }
         
         
