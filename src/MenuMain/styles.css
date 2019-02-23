@@ -1,4 +1,4 @@
-.menu {
+.menu-main {
     box-sizing: border-box;
     width: 16em;
     min-height: 97%;
@@ -10,20 +10,20 @@
 
     z-index: 2;
 }
-.menu--close {
+.menu-main--close {
     display: none;
 }
 
-    .menu ul {
+    .menu-main ul {
         padding: 0;
         margin: 0;
     }
 
-        .menu-item {
+        .menu-main-item {
             list-style: none;
         }
 
-            .menu-item-link {
+            .menu-main-item-link {
                 display: block;
                 padding: .8em;
                 font-weight: 700;
@@ -36,41 +36,41 @@
                 flex-wrap: wrap;
                 flex-direction: row;
             }
-            .menu-item-link--active {
+            .menu-main-item-link--active {
                 background: #1D78DC;
             }            
-            .menu-item-link:hover {
+            .menu-main-item-link:hover {
                 background: #1D78DC;
             }
 
-                .menu-item-link-1i {
+                .menu-main-item-link-1i {
                     margin-right: .4em;
                 }
 
-                .menu-item-link-2i {
+                .menu-main-item-link-2i {
                     margin-left: auto;
                 }
 
-            .submenu {
+            .submenu-main {
                 padding: 0;
                 margin: 0;
                 background: white;
             }
-            .submenu--close {
+            .submenu-main--close {
                 display: none;
             }
 
-                .submenu-item {
+                .submenu-main-item {
                     list-style: none;
                 }
 
-                    .submenu-item-link {
+                    .submenu-main-item-link {
                         text-decoration: none;
                         display: block;
                         padding: .5em .5em .5em 1.5em;
                         color: black;
                         font-weight: 600;
                     }
-                    .submenu-item-link:hover {
+                    .submenu-main-item-link:hover {
                         background-color: #F0F2F5
                     }

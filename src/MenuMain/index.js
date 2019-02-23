@@ -3,10 +3,10 @@ import './styles.css'
 class MenuApp {
 
     constructor () {
-        this.container = document.getElementById("menu")
-        this.button = document.getElementById("main-bar-icon")
+        this.container = document.getElementById("menu-main")
+        this.button = document.getElementById("bar-main-icon")
 
-        this.items = document.getElementsByClassName("menu-item")
+        this.items = document.getElementsByClassName("menu-main-item")
         this.set_Events()
     }
 
@@ -44,18 +44,18 @@ class MenuApp {
             this.close()
         }
         else {
-            this.container.classList.remove('menu--close')
-            this.button.classList.add('main-header-icon--active')
+            this.container.classList.remove('menu-main--close')
+            this.button.classList.add('bar-main-icon--active')
         }
     }
 
     close () {
-        this.container.classList.add('menu--close')
-        this.button.classList.remove('main-header-icon--active')
+        this.container.classList.add('menu-main--close')
+        this.button.classList.remove('bar-main-icon--active')
     }
 
     check_IsOpen () {
-        let value = this.container.classList.contains('menu--close')
+        let value = this.container.classList.contains('menu-main--close')
         if (value == true)
         {
             return false
@@ -70,8 +70,8 @@ class MenuApp {
 class SubMenu {
 
     constructor (_item_obj) {
-        this.container = _item_obj.getElementsByClassName("submenu")[0]
-        this.button = _item_obj.getElementsByClassName("menu-item-link")[0]
+        this.container = _item_obj.getElementsByClassName("submenu-main")[0]
+        this.button = _item_obj.getElementsByClassName("menu-main-item-link")[0]
 
         this.set_Events()
     }
@@ -93,8 +93,8 @@ class SubMenu {
             this.close()
         }
         else {
-            this.container.classList.remove('submenu--close')
-            this.button.classList.add('menu-item-link--active')
+            this.container.classList.remove('submenu-main--close')
+            this.button.classList.add('menu-main-item-link--active')
 
             let iconito = this.button.getElementsByClassName("fa-angle-down")[0]
             iconito.classList.remove("fa-angle-down")
@@ -103,8 +103,8 @@ class SubMenu {
     }
 
     close() {
-        this.container.classList.add('submenu--close')
-        this.button.classList.remove('menu-item-link--active')
+        this.container.classList.add('submenu-main--close')
+        this.button.classList.remove('menu-main-item-link--active')
 
         let iconito = this.button.getElementsByClassName("fa-angle-up")[0]
         iconito.classList.remove("fa-angle-up")
@@ -112,7 +112,7 @@ class SubMenu {
     }
 
     check_IsOpen () {
-        let value = this.container.classList.contains("submenu--close")
+        let value = this.container.classList.contains("submenu-main--close")
         if (value == true) {
             return false
         }

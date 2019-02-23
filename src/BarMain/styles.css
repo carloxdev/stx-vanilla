@@ -1,4 +1,4 @@
-.main-bar {
+.bar-main {
     background: rgba(54, 146, 231, 1);
     background: -moz-linear-gradient(top, rgba(54, 146, 231, 1) 0%, rgba(26, 116, 219, 1) 81%, rgba(26, 116, 219, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(54, 146, 231, 1)), color-stop(81%, rgba(26, 116, 219, 1)), color-stop(100%, rgba(26, 116, 219, 1)));
@@ -21,89 +21,89 @@
     box-shadow: -1px 2px 13px 0px rgba(0, 0, 0, 0.48);
 }
 
-    .main-bar-icon {
+    .bar-main-icon {
         flex-grow: 0;
         cursor: pointer;
         align-self: center;
         padding: .45em .45em .42em .45em;
     }
-    .main-bar-icon--active {
+    .bar-main-icon--active {
         background: rgba(54, 146, 231, 1);
         border-radius: 4px;
     }
-    .main-bar-icon:hover {
+    .bar-main-icon:hover {
         background: rgba(54, 146, 231, 1);
         border-radius: 4px;
     }
 
-    .main-bar-title {
+    .bar-main-title {
         flex-grow: 8;
         text-align: center;
         align-self: center;
         font-weight: 700;
     }
 
-    .main-bar-user {
+    .bar-main-user {
         flex-grow: 0;
         cursor: pointer;
         align-self: center;
         padding: .45em;
         margin-right: .3em;
     }
-    .main-bar-user--active {
+    .bar-main-user--active {
         background: rgba(54, 146, 231, 1);
         border-radius: 4px;
     }
-    .main-bar-user:hover {
+    .bar-main-user:hover {
         background: rgba(54, 146, 231, 1);
         border-radius: 4px;
     }
 
-        .main-bar-user-text {
+        .bar-main-user-text {
             display: none;
         }
 
-            .main-bar-user-text-h1 {
+            .bar-main-user-text-h1 {
                 font-weight: 700;
             }
-            .main-bar-user-text-h1 { 
+            .bar-main-user-text-h1 { 
                 font-weight: 600;
             }
 
-        .main-bar-user-row {
+        .bar-main-user-row {
             display: none;
         }
 
-    .main-bar-out {
+    .bar-main-out {
         display: none;
     }
 
 @media (min-width: 576px) {
 
-    .main-bar-title {
+    .bar-main-title {
         text-align: left;
         margin-left: .5em;
     }
 
-        .main-bar-user-icon {
+        .bar-main-user-icon {
             margin-right: 5px;
         }
 
-        .main-bar-user-text {
+        .bar-main-user-text {
             display: inline-block;
             margin-right: 5px;
         }
 
-            .main-bar-user-text-h1 {
+            .bar-main-user-text-h1 {
                 display: block;
                 font-size: .8em;
             }
 
-            .main-bar-user-text-h2 {
+            .bar-main-user-text-h2 {
                 display: none;
             }
 
-        .main-bar-user-row {
+        .bar-main-user-row {
             display: inline-block;
             font-size: .8em;
         }
@@ -113,16 +113,16 @@
 
 @media (min-width: 768px) {
 
-    .main-bar-title {
+    .bar-main-title {
         flex-grow: 7;
     }
 
-    .main-bar-user {
+    .bar-main-user {
         flex-grow: 0;
         margin-right: .5em;
     }
 
-    .main-bar-out {
+    .bar-main-out {
         flex-grow: 0;
         display: inline-block;
         text-align: right;
@@ -131,7 +131,7 @@
         margin-right: .3em;
     }
 
-        .main-bar-out-btn {
+        .bar-main-out-btn {
             border: none;
             font-family: inherit;
         
@@ -164,7 +164,7 @@
         }
         
         
-        .main-bar-out-btn:after {
+        .bar-main-out-btn:after {
             content: '';
             position: absolute;
             z-index: -1;
@@ -173,7 +173,7 @@
             transition: all 0.3s;
         }
 
-        .main-bar-out-btn:active {
+        .bar-main-out-btn:active {
             box-shadow: 0 0 #ab3c3c;
             top: 6px;
         }
@@ -182,39 +182,39 @@
 
 @media (min-width: 1200px) {
 
-    .main-bar {
+    .bar-main {
         height: 3em;
     }
 
-        .main-bar-icon {
+        .bar-main-icon {
             padding: .45em;
             margin-left: .5em;
         }
 
-        .main-bar-user {
+        .bar-main-user {
             margin-right: 1em;
         }
 
-            .main-bar-user-icon {
+            .bar-main-user-icon {
                 font-size: 2em;
             }
 
-                .main-bar-user-text-h1 {
+                .bar-main-user-text-h1 {
                     text-align: center;
                     display: block;
                     margin-bottom: .2em;
                 }
-                .main-bar-user-text-h2 {
+                .bar-main-user-text-h2 {
                     text-align: center;
                     display: block;
                     font-size: .5em;
                 }
 
-            .main-bar-user-row {
+            .bar-main-user-row {
                 font-size: 1em;
             }
 
-        .main-bar-out {
+        .bar-main-out {
             margin-top: .5em;
         }
 }

@@ -3,8 +3,8 @@ import './styles.css'
 export default class MenuUser {
 
     constructor () {
-        this.container = document.getElementById("user-menu")
-        this.button = document.getElementById("main-bar-user")
+        this.container = document.getElementById("menu-user")
+        this.button = document.getElementById("bar-main-user")
 
         this.set_Events()
     }
@@ -35,18 +35,18 @@ export default class MenuUser {
             this.close()
         }
         else {
-            this.container.classList.remove('user-menu--close')
-            this.button.classList.add('main-bar-user--active')
+            this.container.classList.remove('menu-user--close')
+            this.button.classList.add('bar-main-user--active')
         }
     }
 
     close () {
-        this.container.classList.add('user-menu--close')
-        this.button.classList.remove('main-bar-user--active')
+        this.container.classList.add('menu-user--close')
+        this.button.classList.remove('bar-main-user--active')
     }
 
     check_IsOpen () {
-        let value = this.container.classList.contains('user-menu--close')
+        let value = this.container.classList.contains('menu-user--close')
         if (value == true) {
             return false
         }

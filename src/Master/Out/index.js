@@ -1,7 +1,7 @@
 import 'normalize.css' 
 
 import Spinner from '../../Spinner/index.js'
-import '../../HeaderSimple/index.js'
+import '../../BarMainSimple/index.js'
 
 import './styles.css'
 

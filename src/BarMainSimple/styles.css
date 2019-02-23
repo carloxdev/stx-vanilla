@@ -1,4 +1,4 @@
-.header {
+.bar-main-simple {
     background: rgba(54,146,231,1);
     background: -moz-linear-gradient(top, rgba(54,146,231,1) 0%, rgba(26,116,219,1) 81%, rgba(26,116,219,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(54,146,231,1)), color-stop(81%, rgba(26,116,219,1)), color-stop(100%, rgba(26,116,219,1)));
