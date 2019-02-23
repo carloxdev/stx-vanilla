@@ -1,6 +1,6 @@
 import './styles.css'
 
-class MenuApp {
+class MenuMain {
 
     constructor () {
         this.container = document.getElementById("menu-main")
@@ -23,7 +23,7 @@ class MenuApp {
         for (let item of this.items) {
             if (item.hasAttribute("data-type")) {
                 if (item.getAttribute("data-type") == "submenu") {
-                    new SubMenu(item)
+                    new SubmenuMain(item)
                 }
             }
         }
@@ -67,7 +67,7 @@ class MenuApp {
 }
 
 
-class SubMenu {
+class SubmenuMain {
 
     constructor (_item_obj) {
         this.container = _item_obj.getElementsByClassName("submenu-main")[0]
@@ -122,5 +122,4 @@ class SubMenu {
     }
 }
 
-
-export default MenuApp;
+export default MenuMain;
