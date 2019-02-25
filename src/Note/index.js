@@ -32,9 +32,10 @@ class Note {
 
     set_Created_Date(_value) {
         if (_value) {
-            this.created_date = moment(_value).startOf(
-                'hour'
-            ).fromNow()
+            // this.created_date = moment(_value).startOf(
+            //     'hour'
+            // ).fromNow()
+            this.created_date = moment(_value).format("DD MMM YYYY, h:mm a")
         }
     }
 

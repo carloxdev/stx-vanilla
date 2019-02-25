@@ -1,6 +1,7 @@
 .main-title {
     text-align: center;
     font-size: 1.2em;
+    font-weight: 600;
 }
 
 @media (min-width: 768px) {
