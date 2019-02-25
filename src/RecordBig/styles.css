@@ -226,6 +226,10 @@
         margin-bottom: .1em;
     }
 
+    .card:first-child {
+        margin-top: 1.5em;
+    }
+
         .card-header {
             background-color: white;
             flex-direction: row;

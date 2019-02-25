@@ -32,8 +32,8 @@
     flex-direction: row;
     justify-content: space-between;
 
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: .4em;
+    padding-right: .4em;
 }
 
     .note-footer-created_date {

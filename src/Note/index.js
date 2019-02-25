@@ -64,7 +64,7 @@ class Note {
                         <div class="note-footer">
                             <div class="note-footer-created_date">
                                 <i class="fas fa-calendar-alt"></i> 
-                                Creada ${ this.created_date }
+                                Creada: ${ this.created_date }
                             </div>             
                             <div class="note-footer-created_by">
                                 <i class="fas fa-user-alt"></i> 
