@@ -1,0 +1,26 @@
+.timeline {
+    position: relative;
+    margin-top: 1em;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 31px;
+    margin-left: -3px;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+    .timeline::after {
+        left: 50%;
+    }
+
+}
+
