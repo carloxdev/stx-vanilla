@@ -56,6 +56,7 @@
                 margin-right: 5px;
                 width: 100%;
                 margin-bottom: 5px;
+                font-weight: 700;
             }
 
             .card-aside-body-item .item-data {
@@ -64,6 +65,7 @@
                 font-size: 1em;
                 text-align: left;
                 width: 100%;
+                font-weight: 700;
             }
 
                 .card-aside-body-item .item-data a {
@@ -85,12 +87,12 @@
             .card-aside-body-currency .currency-simbol {
                 color: #aaaaaa;
                 font-size: .8em;
-                font-weight: 700;
+                font-weight: 600;
             }
 
             .card-aside-body-currency .currency-data { 
                 font-size: 1.5em;
-                font-weight: 600;
+                font-weight: 700;
             }
 
 

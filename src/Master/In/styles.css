@@ -27,32 +27,3 @@ body {
         flex: 1 0 auto;
         background-color: #F0F2F5;
     }
-
-    .footer {
-        flex-shrink: 0;
-        padding: 1em .5em;
-        text-align: center;
-        background-color: white;
-        border-top: 1px solid #d4d9dd;
-    }
-
-        .footer-text-left {
-            color: #454545;
-            margin-bottom: .5em;
-            font-size: .8em;
-        }
-
-        .footer-text-right {
-            font-size: .8em;
-            color: #8B9298;
-        }
-
-            .footer-text-right a {
-                text-decoration: none;
-                font-weight: 600;
-                color: black;
-            }
-
-            .footer-text-right a:visited {
-                color: black;
-            }
