@@ -10,7 +10,8 @@
 
     .card-info-header {
         background: #f8f8f8;
-        padding: 9px 16px;
+        padding: 0 16px;
+        height: 3.2em;
         font-size: 14px;
         border-bottom: 1px solid #d4d9dd;
 
@@ -50,7 +51,7 @@
             .card-info-body-item {
                 display: flex;
                 flex-direction: column;
-                padding-bottom: .8em;
+                padding-bottom: 1em;
                 align-items: baseline;
                 width: 100%;
                 flex: 1 0 auto;
@@ -63,6 +64,7 @@
                     width: 100%;
                     word-break: break-all;
                     word-break: break-word;
+                    margin-bottom: 0.1em;
                 }
                     .card-info-body-item .item-label .label-value::after {
                         content: ":";
@@ -71,13 +73,29 @@
                 .card-info-body-item .item-data,
                 .card-info-body-item .item-number,
                 .card-info-body-item .item-currency {
-                    color: #4f4f4f;
-                    font-size: 1em;
-                    font-weight: 700;
-                    width: 100%;
-                    word-break: break-all;
-                    word-break: break-word;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: baseline;
                 }
+
+                    .card-info-body-item .item-data .data-icon,
+                    .card-info-body-item .item-number .data-icon,
+                    .card-info-body-item .item-currency .data-icon {
+                        color: #797979;
+                        margin-right: .5em;
+                        font-size: .9em;
+                    }                
+
+                    .card-info-body-item .item-data .data-value,
+                    .card-info-body-item .item-number .data-value,
+                    .card-info-body-item .item-currency .data-value {
+                        color: #4f4f4f;
+                        font-size: 1em;
+                        font-weight: 700;
+                        width: 100%;
+                        word-break: break-all;
+                        word-break: break-word;
+                    }
 
         .card-info-body-section {
             border-top: 1px solid #d4d9dd;
@@ -110,7 +128,7 @@
 @media (min-width: 576px) {
 
     .card-info-body-item {
-        width: 45%;
+        width: 50%;
     }
     
     .card-info-body-item--x2 { 

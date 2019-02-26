@@ -1,12 +1,10 @@
 import 'normalize.css'
 
 import Spinner from '../../Spinner/index.js'
+import '../../BarMain/index.js'
 import MenuMain from '../../MenuMain/index.js'
 import MenuUser from '../../MenuUser/index.js'
 import '../../Footer/index.js'
-
-import '../../BarMain/index.js'
-
 import './styles.css'
 
 

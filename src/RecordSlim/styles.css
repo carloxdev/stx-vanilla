@@ -89,6 +89,11 @@
                         word-break: break-word;
                     }
 
+                    .card-body-item .item-currency .data-value .data-value-simbol {
+                        font-weight: 600;
+                        color: #949494;
+                    }
+
             .card-body-actions {
                 background: #ffffff;
 
@@ -360,10 +365,6 @@
                             display: flex;
                             justify-content: space-between;
                         }
-
-                            .card-body-item .item-currency .data-value .data-value-simbol {
-                                color: #949494;
-                            }
 
 
                     .card-body-item .item-number {

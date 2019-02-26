@@ -7,19 +7,20 @@
 }
 
     .footer-text-left {
-        color: #454545;
+        color: #8B9298;
         margin-bottom: .5em;
         font-size: .8em;
+        font-weight: 700;
     }
 
     .footer-text-right {
         font-size: .8em;
         color: #8B9298;
+        font-weight: 700;
     }
 
         .footer-text-right a {
             text-decoration: none;
-            font-weight: 600;
             color: black;
         }
 

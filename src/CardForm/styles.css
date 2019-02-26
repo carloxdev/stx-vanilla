@@ -10,7 +10,8 @@
 
     .card-form-header {
         background: #f8f8f8;
-        padding: 9px 16px;
+        padding: 0 16px;
+        height: 3.2em;
         font-size: 14px;
         border-bottom: 1px solid #d4d9dd;
 
