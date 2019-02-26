@@ -20,11 +20,12 @@
 
         .note-body-data-label {
             font-size: .8em;
+            font-weight: 600;
         }
         .note-body-data-value {
             font-size: 1em;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
         }
 
 .note-footer {

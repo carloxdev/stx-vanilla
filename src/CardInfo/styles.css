@@ -1,4 +1,4 @@
-.card-form {
+.card-info {
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.05);
     border-radius: 4px;
 
@@ -8,7 +8,7 @@
     border: 1px solid #d4d9dd;
 }
 
-    .card-form-header {
+    .card-info-header {
         background: #f8f8f8;
         padding: 9px 16px;
         font-size: 14px;
@@ -24,14 +24,14 @@
             font-weight: 600;
         }
 
-    .card-form-body {
+    .card-info-body {
         background: #ffffff;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
     }
 
-        .card-form-body-items {
+        .card-info-body-items {
             border-top: 0;
             border-bottom: 0;
             border-radius: 0;
@@ -47,12 +47,49 @@
             box-sizing: border-box;
         }
 
-        .card-form-body-section {
+            .card-info-body-item {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: .8em;
+                align-items: baseline;
+                width: 45%;
+            }
+            .card-info-body-item--middle { 
+                width: 95%
+            }
+            .card-info-body-item--big { 
+                width: 95% !important;
+            }
+
+                .card-info-body-item .item-label {
+                    color: #aaaaaa;
+                    font-size: .9em;
+                    font-weight: 700;
+                    width: 100%;
+                    word-break: break-all;
+                    word-break: break-word;
+                }
+                    .card-info-body-item .item-label .label-value::after {
+                        content: ":";
+                    }
+
+                .card-info-body-item .item-data,
+                .card-info-body-item .item-number,
+                .card-info-body-item .item-currency {
+                    color: #4f4f4f;
+                    font-size: 1em;
+                    font-weight: 700;
+                    width: 100%;
+                    word-break: break-all;
+                    word-break: break-word;
+                }
+
+        .card-info-body-section {
             border-top: 1px solid #d4d9dd;
             padding-left: 1em;
             padding-top: .5em;
         }
-            .card-form-body-section .section-title {
+            .card-info-body-section .section-title {
                 font-size: .9em;
                 font-weight: 400;
                 color: white;
@@ -62,7 +99,7 @@
                 display: inline-block;
             }
 
-        .card-form-body-footer {
+        .card-info-body-footer {
             border-top: 1px solid #d4d9dd;
             box-sizing: border-box;
 
@@ -83,7 +120,7 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-        .card-form-body-items {
+        .card-info-body-items {
             justify-content: space-between;
         }
 }
