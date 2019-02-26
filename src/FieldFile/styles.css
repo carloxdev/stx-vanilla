@@ -66,6 +66,13 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
+    .file--x2 {
+        width: 93% !important;
+    }
+
+    .file--x3 {
+        width: 93% !important;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */

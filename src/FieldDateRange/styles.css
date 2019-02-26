@@ -72,6 +72,13 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
+    .range--x2 {
+        width: 93% !important;
+    }
+
+    .range--x3 {
+        width: 93% !important;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */

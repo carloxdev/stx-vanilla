@@ -65,6 +65,13 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
+    .textarea--x2 {
+        width: 93% !important;
+    }
+
+    .textarea--x3 {
+        width: 93% !important;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
