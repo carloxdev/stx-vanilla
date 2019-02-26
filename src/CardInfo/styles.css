@@ -68,7 +68,16 @@
                 }
                     .card-info-body-item .item-label .label-value::after {
                         content: ":";
-                    }
+                    }        
+
+                .card-info-body-item a {
+                    text-decoration: none;
+                    color:#3861c3 !important;
+                }
+                .card-info-body-item a:visited {
+                    color:#3861c3 !important;
+                }
+    
 
                 .card-info-body-item .item-data,
                 .card-info-body-item .item-number,
