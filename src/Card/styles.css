@@ -60,10 +60,10 @@
                 align-items: baseline;
                 width: 45%;
             }
-            .card-body-item--middle { 
+            .card-body-item--x2 { 
                 width: 95%
             }
-            .card-body-item--big { 
+            .card-body-item--x3 { 
                 width: 95% !important;
             }
 
