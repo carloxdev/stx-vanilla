@@ -67,11 +67,11 @@
 @media (min-width: 576px) {
 
     .file--x2 {
-        width: 93% !important;
+        width: 100% !important;
     }
 
     .file--x3 {
-        width: 93% !important;
+        width: 100% !important;
     }
 }
 

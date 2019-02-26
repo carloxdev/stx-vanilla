@@ -59,11 +59,11 @@
 @media (min-width: 576px) {
 
     .checkbox--x2 {
-        width: 93% !important;
+        width: 100% !important;
     }
 
     .checkbox--x3 {
-        width: 93% !important;
+        width: 100% !important;
     }
 }
 

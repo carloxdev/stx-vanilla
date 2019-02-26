@@ -66,11 +66,11 @@
 @media (min-width: 576px) {
 
     .textarea--x2 {
-        width: 93% !important;
+        width: 100% !important;
     }
 
     .textarea--x3 {
-        width: 93% !important;
+        width: 100% !important;
     }
 }
 

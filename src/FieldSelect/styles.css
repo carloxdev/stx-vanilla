@@ -76,11 +76,11 @@
 @media (min-width: 576px) {
 
     .select--x2 {
-        width: 93% !important;
+        width: 100% !important;
     }
 
     .select--x3 {
-        width: 93% !important;
+        width: 100% !important;
     }
 }
 
