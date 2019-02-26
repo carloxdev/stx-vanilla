@@ -45,4 +45,7 @@
     .note-footer-created_by {
         color: #aaa;
         font-size: .7em;
+        word-break: break-all;
+        word-break: break-word;
+        text-align: right;
     }
