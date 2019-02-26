@@ -53,6 +53,7 @@
                 padding-bottom: .8em;
                 align-items: baseline;
                 width: 100%;
+                flex: 1 0 auto;
             }
 
                 .card-info-body-item .item-label {
