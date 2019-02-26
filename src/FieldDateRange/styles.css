@@ -91,11 +91,11 @@
         width: 31%;
     }
 
-        .x2 {
+        .range--x2 {
             width: 42% !important;
         }
 
-        .x3 {
+        .range--x3 {
             width: 93% !important;
         }
 }

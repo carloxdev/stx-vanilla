@@ -85,11 +85,11 @@
         width: 31%;
     }
 
-        .x2 {
+        .textarea--x2 {
             width: 42% !important;
         }
 
-        .x3 {
+        .textarea--x3 {
             width: 93% !important;
         }
 }

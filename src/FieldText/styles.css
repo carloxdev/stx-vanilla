@@ -86,11 +86,11 @@
         width: 31%;
     }
 
-        .x2 {
+        .text--x2 {
             width: 42% !important;
         }
 
-        .x3 {
+        .text--x3 {
             width: 93% !important;
         }
 }
