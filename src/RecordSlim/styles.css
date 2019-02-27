@@ -294,6 +294,10 @@
                     width: 100%;
                 }
 
+                    .card-header-item .mark {
+                        border-radius: 0;
+                    }                
+
                     .card-header-item .item-data .data-value {
                         word-break: break-all;
                         word-break: break-word;
