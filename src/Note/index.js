@@ -54,7 +54,9 @@ class Note {
                             </div>
                             <div class="note-body-data">
                                 <span class="note-body-data-label">Fecha:</span>
-                                <span class="note-body-data-value">${ this.date }</span>
+                                <span class="note-body-data-value">
+                                    ${ this.date }
+                                </span>
                             </div>
                             <div class="note-body-data">
                                 <span class="note-body-data-label">Descripcion:</span>
@@ -64,7 +66,7 @@ class Note {
                         <div class="note-footer">
                             <div class="note-footer-created_date">
                                 <i class="fas fa-calendar-alt"></i> 
-                                Creada: ${ this.created_date }
+                                ${ this.created_date }
                             </div>             
                             <div class="note-footer-created_by">
                                 <i class="fas fa-user-alt"></i> 

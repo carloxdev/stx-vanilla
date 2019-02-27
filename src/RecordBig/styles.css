@@ -104,7 +104,7 @@
                     .card-body-item .item-data .data-value,
                     .card-body-item .item-number .data-value {
                         display: flex;
-                        align-items: baseline;
+                        align-items: center;
                     }
 
                     .card-body-item .item-currency .data-value {
@@ -315,10 +315,6 @@
                     padding: .5em .1em;
                     width: 100%;
                 }
-
-                    .card-header-item .mark {
-                        border-radius: 0;
-                    }                
 
                     .card-header-item .item-data .data-value {
                         word-break: break-all;

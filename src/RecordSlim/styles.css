@@ -104,7 +104,7 @@
                     .card-body-item .item-data .data-value,
                     .card-body-item .item-number .data-value {
                         display: flex;
-                        align-items: baseline;
+                        align-items: center;
                     }
 
                     .card-body-item .item-currency .data-value {
