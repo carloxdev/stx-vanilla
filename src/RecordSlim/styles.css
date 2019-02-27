@@ -81,10 +81,11 @@
                     .card-body-item .item-label {
                         color: #949494;
                         font-size: .8em;
-                        font-weight: 600;
+                        font-weight: 700;
                         width: 100%;
                         word-break: break-all;
                         word-break: break-word;
+                        margin-bottom: 0.1em;
                     }
                         .card-body-item .item-label .label-value::after {
                             content: ":";
