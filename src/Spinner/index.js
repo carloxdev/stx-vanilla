@@ -6,9 +6,9 @@ export default class Spinner {
     }
 
     create_HtmlElement () {
-        let html = '<div class="loading-wrap" id="spinner"> '
-                    '    <div class="loading"></div> '
-                    '</div>'
+        // let html = '<div class="loading-wrap" id="spinner"> '
+        //             '    <div class="loading"></div> '
+        //             '</div>'
         let html_element = document.createElement("div");
         html_element.className = "loading-wrap"
         html_element.setAttribute("id", "spinner")

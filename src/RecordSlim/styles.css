@@ -29,7 +29,14 @@
 
                 .card-header-item .item-data {
                     font-size: .9em;
+                    display: flex;
+                    align-items: center;
                 }
+    
+                    .card-header-item .item-data .data-icon {
+                        margin-right: .3em;
+                        font-size: .8em;
+                    }
 
         .card-body {
             height: auto;
