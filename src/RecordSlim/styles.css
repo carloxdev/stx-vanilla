@@ -29,11 +29,14 @@
 
                 .card-header-item .item-data {
                     font-size: .9em;
-                    display: flex;
-                    align-items: center;
                 }
     
-                    .card-header-item .item-data .data-icon {
+                    .card-header-item .item-data .data-value {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .card-header-item .item-data .data-value .icon {
                         margin-right: .3em;
                         font-size: .8em;
                     }
@@ -292,11 +295,7 @@
                     height: 100%;
                     padding: .5em .5em;
                     width: 100%;
-                }
-
-                    .card-header-item .mark {
-                        border-radius: 0;
-                    }                
+                }            
 
                     .card-header-item .item-data .data-value {
                         word-break: break-all;

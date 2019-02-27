@@ -23,20 +23,23 @@
             justify-content: space-between;
         }
 
-                .card-header-item .item-label {
-                    display: none;
+            .card-header-item .item-label {
+                display: none;
+            }
+
+            .card-header-item .item-data {
+                font-size: .9em;
+            }
+
+                .card-header-item .item-data .data-value {
+                    display: flex;
+                    align-items: center;                        
                 }
 
-                .card-header-item .item-data {
-                    font-size: .9em;
-                    display: flex;
-                    align-items: center;
+                .card-header-item .item-data .data-value .icon {
+                    margin-right: .3em;
+                    font-size: .8em;
                 }
-    
-                    .card-header-item .item-data .data-icon {
-                        margin-right: .3em;
-                        font-size: .8em;
-                    }
 
         .card-body {
             height: auto;
