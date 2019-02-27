@@ -31,7 +31,6 @@
                     font-size: .9em;
                 }
 
-
                     .card-header-item .item-data .data-value {
                         display: flex;
                         align-items: center;                        
@@ -80,9 +79,9 @@
                 }
 
                     .card-body-item .item-label {
-                        color: #949494;
+                        color: #aaaaaa;
                         font-size: .8em;
-                        font-weight: 600;
+                        font-weight: 700;
                         width: 100%;
                         word-break: break-all;
                         word-break: break-word;
@@ -94,11 +93,32 @@
                     .card-body-item .item-data,
                     .card-body-item .item-number,
                     .card-body-item .item-currency {
-                        font-weight: 600;
+                        color: #4f4f4f;
+                        font-weight: 700;
                         width: 100%;
                         word-break: break-all;
                         word-break: break-word;
                     }
+
+                    .card-body-item .item-data .data-value,
+                    .card-body-item .item-number .data-value {
+                        display: flex;
+                        align-items: baseline;
+                    }
+
+                    .card-body-item .item-currency .data-value {
+                        display: flex;
+                        align-items: baseline;
+                        justify-content: space-between;
+                    }
+
+                        .card-body-item .item-data .data-value .icon,
+                        .card-body-item .item-number .data-value .icon,
+                        .card-body-item .item-currency .data-value .icon {
+                            margin-right: .3em;
+                            font-size: .8em;
+                            color:#797979;
+                        }
 
                         .card-body-item .item-currency .data-value .data-value-simbol {
                             font-weight: 600;
