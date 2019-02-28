@@ -47,7 +47,7 @@
         }
 
         .breadcrumb-path ul li:last-child a {
-            padding-left: 2em;
+            padding-left: 1em;
         }
         
         .breadcrumb-path ul li.active a {
@@ -95,5 +95,9 @@
 
         .breadcrumb-path ul li a {
             margin-left: -1.5em;
+        }
+
+        .breadcrumb-path ul li:last-child a {
+            padding-left: 2em;
         }
 }
