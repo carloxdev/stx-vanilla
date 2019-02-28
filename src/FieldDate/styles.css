@@ -68,7 +68,13 @@
         margin-top: 5px;
         color: #606060;
         font-size: .9em;
+        text-align: left;
     }
+
+        .date-help ul {
+            padding-left: 2em;
+        }
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {

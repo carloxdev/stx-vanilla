@@ -1,12 +1,12 @@
-.card-msg {
+/* .card-msg {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1 0 auto;
-    /* padding-top: 2em; */
-}
+    }
+ */
 
-    .card-msg-content {
+    .card-msg {
         /* background-color: white; */
         background-color: #F9F8F9;
         width: 85%;
@@ -25,8 +25,20 @@
             font-size: 8em;
         }
 
+        .card-msg-color--blue {
+            color: #288feb;
+        }
+
         .card-msg-color--green {
             color: #98D056;
+        }
+
+        .card-msg-color--yellow {
+            color: #ffba00;
+        }
+
+        .card-msg-color--red {
+            color: #ED4F32;
         }
 
         .card-msg-color--orange {
@@ -54,7 +66,7 @@
                 color: rgb(106, 106, 106);
                 font-size: 1em;
                 font-weight: 600;
-                padding: 0 .4em;
+                padding: 0 .5em;
                 box-sizing: border-box;
             }
 
@@ -105,12 +117,12 @@
 
 @media (min-width: 768px) {
 
-    .card-msg {
+    /* .card-msg {
         align-items: baseline;
         padding-top: 5em;
-    }
+    } */
     
-        .card-msg-content {
+        .card-msg {
             width: 80%;
         }
     

@@ -1,7 +1,7 @@
 .menu-main {
     box-sizing: border-box;
     width: 16em;
-    min-height: 97%;
+    height: 120%;
     position: absolute;
     background: rgba(54, 146, 231, 1);
     -webkit-box-shadow: 9px 0px 14px -5px rgba(0, 0, 0, 0.57);
