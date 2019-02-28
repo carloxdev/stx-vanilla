@@ -13,7 +13,7 @@
     }
     .date-label--error {
         color: #cb4e4e;
-        font-weight: 600;
+        font-weight: 700;
     }
 
         .date-label-optional {
@@ -61,6 +61,7 @@
             color: white;
             font-size: .8em;
             list-style-type: none;
+            font-weight: 700;
         }
 
     .date-help {
