@@ -50,17 +50,33 @@ class Note {
                         <div class="note-body">
                             <div class="note-body-data">
                                 <span class="note-body-data-label">Estado:</span>
-                                <span class="note-body-data-value">${ this.status }</span>
+                                <span class="note-body-data-value">
+                                    <div class="icon">
+                                        <i class="fas fa-dot-circle"></i> 
+                                    </div>
+                                    <div class="value">
+                                        ${ this.status }
+                                    </div>
+                                </span>
                             </div>
                             <div class="note-body-data">
                                 <span class="note-body-data-label">Fecha:</span>
                                 <span class="note-body-data-value">
-                                    ${ this.date }
+                                    <div class="icon">
+                                        <i class="fas fa-calendar-alt"></i> 
+                                    </div>
+                                    <div class="value">
+                                        ${ this.date }
+                                    </div>
                                 </span>
                             </div>
                             <div class="note-body-data">
                                 <span class="note-body-data-label">Descripcion:</span>
-                                <span class="note-body-data-value">${ this.comments }</span>
+                                <span class="note-body-data-value">
+                                    <div class="value">
+                                        "${ this.comments }"
+                                    </div>
+                                </span>
                             </div>
                         </div>
                         <div class="note-footer">
