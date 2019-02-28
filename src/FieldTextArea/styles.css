@@ -23,23 +23,30 @@
         }
 
     .textarea-input {
-        width: 100%;
-        margin: 8px 0 0 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-
-        box-shadow: inset 0 1px 3px #ddd;
+        background-color: #ffffff;
         border-radius: 4px;
+        background-clip: padding-box;
+        border: 1px solid #ccc;
+        color: #433f4a;
+        line-height: 1.5;
+        outline: 0;
+        padding: 10px 10px !important;
+        font-weight: 600;
+        resize: vertical;
+        transition: box-shadow .1s ease-in,border .1s ease-in;
+        box-shadow: inset 0 1px 3px #ddd;
+
+        margin: 8px 0 0 0;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        background-color: #ffffff;
-        padding: 10px 10px !important;
+        width: 100%;
+
         height: 8em;
     }
     .textarea-input:focus {
-        outline: none;
-        background-color: rgb(250, 255, 189)
+        border-color: #1d78dc;
+        box-shadow: 0 0 3px 0px #1d78dc;
     }
     .textarea-input--error {
         border: 1px solid #cb4e4e;

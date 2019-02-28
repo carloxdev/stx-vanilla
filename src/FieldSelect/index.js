@@ -20,12 +20,6 @@ export default class FieldSelect {
         })
     }
 
-    // load(data) {
-    //     for (var i in data) {
-    //         this.add_Option
-    //     }
-    // }
-
     select_Option(_opt) {
         this.container.set(_opt)
     }    

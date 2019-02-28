@@ -45,12 +45,14 @@ class MenuMain {
         }
         else {
             this.container.classList.remove('menu-main--close')
+            document.body.classList.add("menu-main--hide-body")
             this.button.classList.add('bar-main-icon--active')
         }
     }
 
     close () {
         this.container.classList.add('menu-main--close')
+        document.body.classList.remove("menu-main--hide-body")
         this.button.classList.remove('bar-main-icon--active')
     }
 

@@ -17,12 +17,12 @@ class Modal {
 
     open() {
         this.container.classList.add("modal--show");
-        document.body.classList.add("modal--show-body")
+        document.body.classList.add("modal--hide-body")
     }
 
     close() {
         this.container.classList.remove("modal--show");
-        document.body.classList.remove("modal--show-body")
+        document.body.classList.remove("modal--hide-body")
     }
 
     set_Events() {

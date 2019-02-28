@@ -1,11 +1,8 @@
 .card-form {
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.05);
-    border-radius: 4px;
-
+    
     margin-bottom: 1em;
-    overflow: hidden;
-
-    border: 1px solid #d4d9dd;
+    /* overflow: hidden; */
 }
 
     .card-form-header {
@@ -13,12 +10,13 @@
         padding: 0 16px;
         height: 3.2em;
         font-size: 14px;
-        border-bottom: 1px solid #d4d9dd;
+        border: 1px solid #d4d9dd;
 
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        border-radius: 4px 4px 0 0;
     }
 
         .header-item {
@@ -30,6 +28,10 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+
+        border: 1px solid #d4d9dd;
+        border-top: 0;
+        border-radius: 0 0 4px 4px;
     }
 
         .card-form-body-items {
@@ -70,7 +72,7 @@
             padding: 1em;
             text-align: right;
             
-            background: #f8f8f8;
+            /* background: #f8f8f8; */
             width: 100%;
         }
 

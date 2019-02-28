@@ -13,6 +13,10 @@
 .menu-main--close {
     display: none;
 }
+.menu-main--hide-body {
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
 
     .menu-main ul {
         padding: 0;
