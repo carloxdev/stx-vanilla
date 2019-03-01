@@ -33,7 +33,7 @@
     
                     .card-header-item .item-data .data-value {
                         display: flex;
-                        align-items: center;
+                        align-items: baseline;
                     }
 
                     .card-header-item .item-data .data-value .icon {
@@ -104,7 +104,7 @@
                     .card-body-item .item-data .data-value,
                     .card-body-item .item-number .data-value {
                         display: flex;
-                        align-items: center;
+                        align-items: baseline;
                     }
 
                     .card-body-item .item-currency .data-value {
