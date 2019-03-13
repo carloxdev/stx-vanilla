@@ -10,15 +10,15 @@ import './styles.css'
 
 class AppMasterIn {
 
-    constructor (_main, _BtnLogoutId, _MenuLogoutId ) {
-        this.container = document.getElementById(_main)
+    constructor () {
+        this.container = document.getElementById('main')
         this.spinner = new Spinner(this.container)
         this.menu_main = new MenuMain()
         this.user_menu = new MenuUser()
         
         this.domain = window.location.origin
-        this.button_logout = document.getElementById(_BtnLogoutId)
-        this.button_logout_menu = document.getElementById(_MenuLogoutId)
+        this.button_logout = document.getElementById('btn-logout')
+        this.button_logout_menu = document.getElementById('btn-logout-menu')
     }
 }
 
