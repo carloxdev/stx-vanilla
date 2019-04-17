@@ -8,8 +8,8 @@ import './styles.css'
 
 export default class AppMasterOut {
 
-    constructor (_main) {
-        this.container = document.getElementById(_main)
+    constructor () {
+        this.container = document.getElementById("main")
         this.spinner = new Spinner(this.container)        
     }
 }

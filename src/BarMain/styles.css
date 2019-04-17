@@ -21,17 +21,17 @@
     box-shadow: -1px 2px 13px 0px rgba(0, 0, 0, 0.48);
 }
 
-    .bar-main-icon {
+    .bar-main-menu-icon {
         flex-grow: 0;
         cursor: pointer;
         align-self: center;
         padding: .45em .45em .42em .45em;
     }
-    .bar-main-icon--active {
+    .bar-main-menu-icon--active {
         background: rgba(54, 146, 231, 1);
         border-radius: 4px;
     }
-    .bar-main-icon:hover {
+    .bar-main-menu-icon:hover {
         background: rgba(54, 146, 231, 1);
         border-radius: 4px;
     }
@@ -47,8 +47,11 @@
         flex-grow: 0;
         cursor: pointer;
         align-self: center;
-        padding: .45em;
+        padding: .40em;
         margin-right: .3em;
+
+        display: flex;
+        align-items: center;        
     }
     .bar-main-user--active {
         background: rgba(54, 146, 231, 1);
@@ -58,6 +61,12 @@
         background: rgba(54, 146, 231, 1);
         border-radius: 4px;
     }
+
+        .bar-main-user-icon {
+            display: flex;
+            align-items: center;
+            font-size: 1.2em;
+        }
 
         .bar-main-user-text {
             display: none;
@@ -186,13 +195,14 @@
         height: 3em;
     }
 
-        .bar-main-icon {
+        .bar-main-menu-icon {
             padding: .45em;
             margin-left: .5em;
         }
 
         .bar-main-user {
             margin-right: 1em;
+            padding: .50em;
         }
 
             .bar-main-user-icon {

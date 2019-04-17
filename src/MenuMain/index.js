@@ -4,7 +4,7 @@ class MenuMain {
 
     constructor () {
         this.container = document.getElementById("menu-main")
-        this.button = document.getElementById("bar-main-icon")
+        this.button = document.getElementById("bar-main-menu-icon")
 
         this.items = document.getElementsByClassName("menu-main-item")
         this.set_Events()
@@ -46,14 +46,14 @@ class MenuMain {
         else {
             this.container.classList.remove('menu-main--close')
             document.body.classList.add("menu-main--hide-body")
-            this.button.classList.add('bar-main-icon--active')
+            this.button.classList.add('bar-main-menu-icon--active')
         }
     }
 
     close () {
         this.container.classList.add('menu-main--close')
         document.body.classList.remove("menu-main--hide-body")
-        this.button.classList.remove('bar-main-icon--active')
+        this.button.classList.remove('bar-main-menu-icon--active')
     }
 
     check_IsOpen () {

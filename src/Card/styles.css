@@ -32,7 +32,7 @@
 
                 .card-header-item .item-data .data-value {
                     display: flex;
-                    align-items: baseline;
+                    align-items: center;
                 }
 
                 .card-header-item .item-data .data-value .icon {
