@@ -54,7 +54,7 @@
                     background-color: #16a085;
                 }
     
-                    .breadcrumb-path ul li:nth-child(n+3) span {
+                    .breadcrumb-path ul li:nth-child(n+2):not(.show) span {
                         display: none;
                     }
 
@@ -68,7 +68,7 @@
 /* Iphone */
 @media (min-width: 414px) {
 
-    .breadcrumb-path ul li:nth-child(n+3) span {
+    .breadcrumb-path ul li:nth-child(n+2):not(.show) span {
         display: inline-block;
     }
 }
