@@ -1,0 +1,128 @@
+.select-wrapper {
+    /* border-radius: 4px; */
+    width: 100%;
+    margin-top: .4em;
+}
+
+    .select-wrapper .select-header {
+        display: flex;
+        flex-direction: row;
+    }
+
+        .select-wrapper .select-header .search-input {
+            border: 1px solid #ccc;
+            border-right: 0;
+            display: block;
+            font-size: .9em;
+            margin: 0;
+            outline: 0;
+            padding: 10px 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .select-wrapper .select-header .btn-clear,
+        .select-wrapper .select-header .btn-clear:active,
+        .select-wrapper .select-header .btn-clear:focus {
+            border-top: 1px solid #ccc;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 1px solid #ccc;
+            background: white;
+
+            color: #ADB5BC;
+            font-size: .8em;
+
+            align-items: center;
+            text-align: center;
+        }
+
+        .select-wrapper .select-header .btn-select {
+            border: 1px solid #ccc;
+            background: #fafafa;
+            z-index: 2;
+        }
+
+    .select-wrapper .lists {
+        border: 1px solid #ccc;
+        border-top: 0;
+        border-bottom: 0;
+    }
+
+        .select-wrapper .lists .list-non-selected {
+            box-sizing: border-box;
+            display: inline-block;
+            height: 200px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            padding: 0px;
+            vertical-align: top;
+            width: 50%;
+
+            background: #fafafa;
+            border-right: 1px solid #ccc;
+        }
+
+            .select-wrapper .lists .list-non-selected .item.selected {
+                color: #989898;
+            }
+
+            .select-wrapper .lists .list-non-selected .item.disabled {
+                color: #989898;
+                text-decoration: line-through;
+            }
+            .select-wrapper .lists .list-non-selected .item.disabled:hover {
+                background: inherit;
+                cursor: inherit;
+            }
+
+        .select-wrapper .lists .list-selected {
+            box-sizing: border-box;
+            display: inline-block;
+            height: 200px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            padding: 0px;
+            vertical-align: top;
+            width: 50%;
+
+            background: #fff;
+        }
+
+            /* .select-wrapper .lists .list-selected .item.disabled:hover {
+                background: inherit;
+                cursor: inherit;
+            } */
+
+            .select-wrapper .lists .item {
+                cursor: pointer;
+                display: block;
+                padding: 8px 4px;
+
+                font-size: .9em;
+                /* width: 100%; */
+                border-bottom: 1px solid #ccc;
+            }
+
+            .select-wrapper .lists .item:hover {
+                background: #ececec;
+                border-radius: 2px;
+            }
+
+            .select-wrapper .lists .item-group {
+                padding: 5px 10px;
+            }
+
+                .select-wrapper .lists .item-group .group-label {
+                    display: block;
+                    font-size: .875rem;
+                    opacity: .5;
+                    padding: 5px 0;
+                }
+
+    .select-wrapper .btn-deselect {
+        border: 1px solid #ccc;   
+        background: #fafafa;
+        width: 100%;
+        padding: .5em;
+    }
