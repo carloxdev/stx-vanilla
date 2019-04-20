@@ -3,7 +3,7 @@
     flex-wrap: nowrap;
     flex-direction: column;
 
-    padding: 1em;
+    padding: 1em .5em;
 }
 
     .content-header {
@@ -43,11 +43,16 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .content-header {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+
+    .content {    
+        padding: 1em;
     }
+    
+        .content-header {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
 }
 
 /* Large devices (desktops, 992px and up) */
