@@ -2,45 +2,65 @@ import './styles.css'
 
 class FieldMultiSelect {
 
-    constructor (id) {
-        this.select = document.getElementById(id)
-        
-        this.init()
+    constructor (settings) {
+
+        if (typeof settings !== 'undefined' || settings != {} ) {
+            this.select = document.getElementById(settings["id"])
+            this.placeholder = settings["placeholder"]
+            
+            this.init()
+        }
+        else {
+            throw new Error("Se debe proporcionar configuraciones")
+        }
+
     }
 
-    create_SearchBar() {
-        var search = document.createElement("input")
-        search.className = "search-input"
-        search.type = "text"
-        search.setAttribute("placeholder", "Buscar alimento...")
+    create_SearchInput() {
+        var search_input = document.createElement("input")
+        search_input.className = "search-input"
+        search_input.type = "text"
+        search_input.setAttribute("placeholder", this.placeholder)
 
-        search.addEventListener(
+        search_input.addEventListener(
             "input",
-            this.search_Value.bind(this)
+            this.execute_Search.bind(this)
         )
 
-        return search
+        return search_input
     }
 
-    create_ButtonClearSearch() {
+    restart_SearchInput() {
+        this.select.wrapper.header.search_input.value = ""
+        this.select.wrapper.header.btn_clear.innerHTML = ''
+    }
+
+    clear_SearchInput(event) {
+        event.preventDefault()
+        this.restart_SearchInput()
+        this.clear_Columns()
+        this.load_Items()
+        this.select.wrapper.header.search_input.focus()
+    }    
+
+    create_BtnClearSearchInput() {
         let btn_clear = document.createElement("button")
         btn_clear.className = "btn-clear"
         btn_clear.type = "button"
-        // btn_clear.innerHTML = '<i class="fas fa-times-circle"></i>'
 
         btn_clear.addEventListener(
             "click",
-            this.clear_SearchBar.bind(this)
+            this.clear_SearchInput.bind(this)
         )
 
         return btn_clear
     }    
 
-    create_ButtonSelect() {
+    create_BtnSelect() {
         let btn_select = document.createElement("button")
         btn_select.className = "btn-select"
         btn_select.type = "button"
-        btn_select.innerHTML = '<i class="fas fa-check-circle"></i>'
+        btn_select.innerHTML = '<i class="fas fa-check-circle"></i> Seleccionar'
 
         btn_select.addEventListener(
             "click",
@@ -50,51 +70,47 @@ class FieldMultiSelect {
         return btn_select
     }
 
-    restart_SearchBar() {
-        this.select.wrapper.select_header.search.value = ""
-        this.select.wrapper.select_header.btn_clear.innerHTML = ''
-    }
-
-    clear_SearchBar(event) {
-        event.preventDefault()
-        this.restart_SearchBar()
-        this.clear_Columns()
-        this.load_Items()
-        this.select.wrapper.select_header.search.focus()
-    }
-
     select_Items(event) {
 
         // Get search value
-        var query = this.select.wrapper.select_header.search.value;
+        var query = this.select.wrapper.header.search_input.value;
 
-        if (query) {
-            
-            var item_group = null;
-            var current_optgroup = null;
-    
-            // Loop over select options and add to the non-selected and selected columns
-            for (var i = 0; i < this.select.options.length; i++) {
-                var option = this.select.options[i];
-                var label = option.textContent || option.innerText;
+        for (var i = 0; i < this.select.options.length; i++) {
+            var option = this.select.options[i]
+            var label = option.textContent || option.innerText;
 
-                if (!query || query && label.toLowerCase().indexOf(query.toLowerCase()) > -1) {
-                    option.selected = true;
-                }
-
+            if (!query || query && label.toLowerCase().indexOf(query.toLowerCase()) > -1) {
+                option.selected = true
             }
 
-            this.clear_Columns()
-            this.load_Items()
         }
+
+        this.clear_Columns()
+        this.load_Items()        
+
+        // if (query) {
+            
+        //     for (var i = 0; i < this.select.options.length; i++) {
+        //         var option = this.select.options[i]
+        //         var label = option.textContent || option.innerText;
+
+        //         if (!query || query && label.toLowerCase().indexOf(query.toLowerCase()) > -1) {
+        //             option.selected = true;
+        //         }
+
+        //     }
+
+        //     this.clear_Columns()
+        //     this.load_Items()
+        // }
     }
 
     deselect_Items(event) {
 
-        this.restart_SearchBar()
+        this.restart_SearchInput()
 
         for (var i = 0; i < this.select.options.length; i++) {
-            var option = this.select.options[i];
+            var option = this.select.options[i]
             option.selected = false;
         }
 
@@ -135,8 +151,8 @@ class FieldMultiSelect {
         this.select.wrapper.lists.non_selected.innerHTML = ""
     }
 
-    search_Value(event) {
-        this.select.wrapper.select_header.btn_clear.innerHTML = '<i class="fas fa-times-circle"></i>'
+    execute_Search(event) {
+        this.select.wrapper.header.btn_clear.innerHTML = '<i class="fas fa-times-circle"></i>'
         this.clear_Columns()
         this.load_Items()
     }
@@ -144,8 +160,8 @@ class FieldMultiSelect {
     load_Items() {
 
         // Get search value
-        if (this.select.wrapper.select_header.search) {
-            var query = this.select.wrapper.select_header.search.value;
+        if (this.select.wrapper.header.search_input) {
+            var query = this.select.wrapper.header.search_input.value;
         }
 
         var item_group = null;
@@ -153,44 +169,45 @@ class FieldMultiSelect {
 
         // Loop over select options and add to the non-selected and selected columns
         for (var i = 0; i < this.select.options.length; i++) {
-            var option = this.select.options[i];
+            var option = this.select.options[i]
 
             var value = option.value;
             var label = option.textContent || option.innerText;
 
-            var row = document.createElement("a");
+            var row = document.createElement("a")
             row.tabIndex = 0;
-            row.className = "item";
+            row.className = "item"
             row.innerHTML = label;
-            row.setAttribute("role", "button");
-            row.setAttribute("data-value", value);
-            row.setAttribute("multi-index", i);
+            row.setAttribute("role", "button")
+            row.setAttribute("data-value", value)
+            row.setAttribute("multi-index", i)
 
             if (option.disabled) {
-                row.className += " disabled";
+                row.className += " disabled"
             }
 
             // Add row to selected column if option selected
             if (option.selected) {
-                row.className += " selected";
-                var clone = row.cloneNode(true);
-                this.select.wrapper.lists.selected.appendChild(clone);
+                row.className += " selected"
+                var clone = row.cloneNode(true)
+
+                this.select.wrapper.lists.selected.appendChild(clone)
             }
 
             // Create group if entering a new optgroup
             if (option.parentNode.nodeName == "OPTGROUP" && option.parentNode != current_optgroup) {
                 current_optgroup = option.parentNode
-                item_group = document.createElement("div");
-                item_group.className = "item-group";
+                item_group = document.createElement("div")
+                item_group.className = "item-group"
 
                 if (option.parentNode.label) {
-                    var groupLabel = document.createElement("span");
+                    var groupLabel = document.createElement("span")
                     groupLabel.innerHTML = option.parentNode.label;
                     groupLabel.className = "group-label"
-                    item_group.appendChild(groupLabel);
+                    item_group.appendChild(groupLabel)
                 }
 
-                this.select.wrapper.lists.non_selected.appendChild(item_group);
+                this.select.wrapper.lists.non_selected.appendChild(item_group)
             }
 
             // Clear group if not inside optgroup
@@ -203,9 +220,9 @@ class FieldMultiSelect {
             if (!query || query && label.toLowerCase().indexOf(query.toLowerCase()) > -1) {
                 // Append to group if one exists, else just append to wrapper
                 if (item_group != null) {
-                    item_group.appendChild(row);
+                    item_group.appendChild(row)
                 } else {
-                    this.select.wrapper.lists.non_selected.appendChild(row);
+                    this.select.wrapper.lists.non_selected.appendChild(row)
                 }
             }
         }
@@ -214,8 +231,8 @@ class FieldMultiSelect {
     save_OptionsCurrentState() {
 
         for (var i = 0; i < this.select.options.length; i++) {
-            var option = this.select.options[i];
-            option.setAttribute("data-origin-disabled", option.disabled);
+            var option = this.select.options[i]
+            option.setAttribute("data-origin-disabled", option.disabled)
         }
     }
 
@@ -226,9 +243,9 @@ class FieldMultiSelect {
     }
 
     trigger_Event(type) {
-        var e = document.createEvent("HTMLEvents");
-        e.initEvent(type, false, true);
-        this.select.dispatchEvent(e);
+        var e = document.createEvent("HTMLEvents")
+        e.initEvent(type, false, true)
+        this.select.dispatchEvent(e)
     }
 
     toggle_Option(event) {
@@ -268,42 +285,48 @@ class FieldMultiSelect {
         select_header.className = "select-header"
         wrapper.appendChild(select_header)
 
-        var lists = document.createElement("div")
-        lists.className = "lists"
-        wrapper.appendChild(lists)
+        var select_lists = document.createElement("div")
+        select_lists.className = "select-lists"
+        wrapper.appendChild(select_lists)
 
-        // Add search bar
-        let search_bar = this.create_SearchBar()
-        select_header.appendChild(search_bar)
-        select_header.search = search_bar
+        var select_footer = document.createElement("div")
+        select_footer.className = "select-footer"
+        wrapper.appendChild(select_footer)        
 
-        // Add clear search bar
-        let btn_clear = this.create_ButtonClearSearch()
+        // Add search input
+        let search_input = this.create_SearchInput()
+        select_header.appendChild(search_input)
+        select_header.search_input = search_input
+
+        // Add Button clear search input
+        let btn_clear = this.create_BtnClearSearchInput()
         select_header.appendChild(btn_clear)
         select_header.btn_clear = btn_clear
 
-        // Add Button Select
-        let btn_select = this.create_ButtonSelect()
-        select_header.appendChild(btn_select)
-        select_header.btn_select = btn_select
-
-        wrapper.select_header = select_header
+        wrapper.header = select_header
 
         // Add columns
         let non_selected = this.create_NonSelectedColumn()
-        lists.appendChild(non_selected)
-        lists.non_selected = non_selected
+        select_lists.appendChild(non_selected)
+        select_lists.non_selected = non_selected
 
         let selected = this.create_SelectedColumn()
-        lists.appendChild(selected)
-        lists.selected = selected
+        select_lists.appendChild(selected)
+        select_lists.selected = selected
 
-        wrapper.lists = lists
+        wrapper.lists = select_lists
+
+        // Add Button Select
+        let btn_select = this.create_BtnSelect()
+        select_footer.appendChild(btn_select)
+        select_footer.btn_select = btn_select
 
         // Add Button Deselect
         let btn_deselect = this.create_BtnDeselect()
-        wrapper.appendChild(btn_deselect)
-        wrapper.btn_deselect = btn_deselect
+        select_footer.appendChild(btn_deselect)
+        select_footer.btn_deselect = btn_deselect
+
+        wrapper.footer = select_footer
 
         // Add click handler to toggle the selected status
         wrapper.addEventListener("click", this.click_Option.bind(this))
@@ -318,7 +341,7 @@ class FieldMultiSelect {
         this.load_Items()
 
         // Refresh selector when select values change
-        // this.select.addEventListener("change", this.search_Value.bind(this))
+        // this.select.addEventListener("change", this.execute_Search.bind(this))
     }
 }
 
