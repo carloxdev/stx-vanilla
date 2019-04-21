@@ -1,6 +1,6 @@
 import './styles.css'
 
-class FieldMultiselect {
+class FieldMultiSelect {
 
     constructor (settings) {
 
@@ -345,4 +345,4 @@ class FieldMultiselect {
     }
 }
 
-export default FieldMultiselect
+export default FieldMultiSelect
