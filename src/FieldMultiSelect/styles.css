@@ -117,7 +117,6 @@
                 padding: 8px 4px;
 
                 font-size: .9em;
-                /* width: 100%; */
                 border-bottom: 1px solid #ccc;
             }
 
@@ -142,20 +141,20 @@
             flex-direction: row;
         }
 
-        .select-wrapper .select-footer .btn-select {
-            border: 1px solid #ccc;
-            background: #fafafa;
-            z-index: 2;
-            width: 50%;
-        }
+            .select-wrapper .select-footer .btn-select {
+                border: 1px solid #ccc;
+                background: #fafafa;
+                z-index: 2;
+                width: 50%;
+            }
 
-        .select-wrapper .select-footer .btn-deselect {
-            border: 1px solid #ccc;
-            border-left: 0px;
-            background: #fafafa;
-            padding: .5em;
-            width: 50%;
-        }
+            .select-wrapper .select-footer .btn-deselect {
+                border: 1px solid #ccc;
+                border-left: 0px;
+                background: #fafafa;
+                padding: .5em;
+                width: 50%;
+            }
 
 
 /* Small devices (landscape phones, 576px and up) */
