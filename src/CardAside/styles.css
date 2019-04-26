@@ -40,6 +40,12 @@
         justify-content: center;
     }
 
+        .card-aside-empty {
+            font-size: 1.5em;
+            font-weight: 700;
+            text-align: center;
+        }
+
         .card-aside-body-item {
             margin-bottom: 1em;
 
