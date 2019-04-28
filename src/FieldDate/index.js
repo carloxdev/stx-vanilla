@@ -11,24 +11,34 @@ export default class FieldDate {
 
         let init_format = ""
         let enable_time = false
+        let no_calendar = false
+
         if (_type=="date") {
             init_format = 'd/m/Y'
             enable_time = false
+            no_calendar = false
             this.return_format = "YYYY-MM-DD"
         }
 
         if(_type=="datetime") { 
             init_format = 'd/m/Y H:i'
             enable_time = true
+            no_calendar = false
             this.return_format = "YYYY-MM-DD HH:mm:ss"
         }
 
+        if(_type="onlytime") {
+            init_format = "H:i"
+            enable_time = true
+            no_calendar = true
+        }
+
         this.container = flatpickr(
-            '#' + _id,
-            {
+            '#' + _id, {
                 dateFormat: init_format,
                 locale: Spanish,
-                enableTime: enable_time
+                enableTime: enable_time,
+                noCalendar: no_calendar,
             }
         )
     }
