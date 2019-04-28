@@ -27,7 +27,7 @@ export default class FieldDate {
             this.return_format = "YYYY-MM-DD HH:mm:ss"
         }
 
-        if(_type="onlytime") {
+        if(_type=="onlytime") {
             init_format = "H:i"
             enable_time = true
             no_calendar = true
