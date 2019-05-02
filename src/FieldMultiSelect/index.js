@@ -30,18 +30,19 @@ class FieldMultiSelect {
         return search_input
     }
 
-    restart_SearchInput() {
+    clear_SearchInput() {
         this.select.wrapper.header.search_input.value = ""
         this.select.wrapper.header.btn_clear.innerHTML = ''
     }
 
-    clear_SearchInput(event) {
+    click_SearchBtnClear(event) {
         event.preventDefault()
-        this.restart_SearchInput()
+
+        this.clear_SearchInput()
         this.clear_Columns()
         this.load_Items()
         this.select.wrapper.header.search_input.focus()
-    }    
+    }
 
     create_BtnClearSearchInput() {
         let btn_clear = document.createElement("button")
@@ -50,7 +51,7 @@ class FieldMultiSelect {
 
         btn_clear.addEventListener(
             "click",
-            this.clear_SearchInput.bind(this)
+            this.click_SearchBtnClear.bind(this)
         )
 
         return btn_clear
@@ -70,6 +71,41 @@ class FieldMultiSelect {
         return btn_select
     }
 
+    clear_Options() {
+        for (let i in this.select.options) {
+            this.select.options[i] = null
+        }
+    }
+
+    get_SelectedOptions() {
+        let selected_values = []
+        for (var i = 0; i < this.select.options.length; i++) {
+            if (this.select.options[i].selected) {
+                selected_values.push(parseInt(this.select.options[i].value))
+            }
+        }
+
+        return selected_values
+    }
+
+    fill_Options(data) {
+        for (let i in data) {
+            let opt = document.createElement('option')
+            opt.value = data[i].id
+            let text = `${data[i].day_desc}: ${data[i].from_hour} - ${data[i].to_hour}`
+            opt.innerHTML = text
+            this.select.appendChild(opt)
+        }
+    }
+
+    mark_Options(data) {
+        for (var i = 0; i < this.select.options.length; i++) { 
+            if (data.includes(parseInt(this.select.options[i].value))) {
+                this.select.options[i].selected = true
+            }
+        }
+    }
+
     select_Items(event) {
 
         // Get search value
@@ -86,28 +122,12 @@ class FieldMultiSelect {
         }
 
         this.clear_Columns()
-        this.load_Items()        
-
-        // if (query) {
-            
-        //     for (var i = 0; i < this.select.options.length; i++) {
-        //         var option = this.select.options[i]
-        //         var label = option.textContent || option.innerText;
-
-        //         if (!query || query && label.toLowerCase().indexOf(query.toLowerCase()) > -1) {
-        //             option.selected = true;
-        //         }
-
-        //     }
-
-        //     this.clear_Columns()
-        //     this.load_Items()
-        // }
+        this.load_Items()
     }
 
     deselect_Items(event) {
 
-        this.restart_SearchInput()
+        this.clear_SearchInput()
 
         for (var i = 0; i < this.select.options.length; i++) {
             var option = this.select.options[i]
@@ -144,7 +164,7 @@ class FieldMultiSelect {
         non_selected.className = "list-non-selected"
 
         return non_selected
-    }    
+    }
 
     clear_Columns() {
         this.select.wrapper.lists.selected.innerHTML = ""
@@ -152,7 +172,14 @@ class FieldMultiSelect {
     }
 
     execute_Search(event) {
-        this.select.wrapper.header.btn_clear.innerHTML = '<i class="fas fa-times-circle"></i>'
+
+        let value = this.select.wrapper.header.search_input.value
+        if (value) {
+            this.select.wrapper.header.btn_clear.innerHTML = '<i class="fas fa-times-circle"></i>'
+        } else {
+            this.select.wrapper.header.btn_clear.innerHTML = ''
+        }
+        
         this.clear_Columns()
         this.load_Items()
     }
@@ -218,6 +245,7 @@ class FieldMultiSelect {
 
             // Apply search filtering
             if (!query || query && label.toLowerCase().indexOf(query.toLowerCase()) > -1) {
+
                 // Append to group if one exists, else just append to wrapper
                 if (item_group != null) {
                     item_group.appendChild(row)
@@ -265,13 +293,13 @@ class FieldMultiSelect {
             }
         }
 
-        console.log(`Seleccionados: ${selected_count}`)
-        console.log(option)
+        // console.log(`Seleccionados: ${selected_count}`)
+        // console.log(option)
 
         this.clear_Columns()
         this.load_Items()
     
-    }    
+    }
 
     init() {
         // Hide component
@@ -343,6 +371,7 @@ class FieldMultiSelect {
         // Refresh selector when select values change
         // this.select.addEventListener("change", this.execute_Search.bind(this))
     }
+
 }
 
 export default FieldMultiSelect

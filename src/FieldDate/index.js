@@ -8,6 +8,7 @@ var moment = require('moment')
 export default class FieldDate {
 
     constructor (_id, _type) {
+        this.id = _id
 
         let init_format = ""
         let enable_time = false
@@ -34,7 +35,7 @@ export default class FieldDate {
         }
 
         this.container = flatpickr(
-            '#' + _id, {
+            '#' + this.id, {
                 dateFormat: init_format,
                 locale: Spanish,
                 enableTime: enable_time,
@@ -45,6 +46,11 @@ export default class FieldDate {
 
     clear() {
         this.container.clear()
+    }
+
+    set_Value(value) {
+        let input = document.getElementById(this.id)
+        input.value = value
     }
 
     get_Value () {
