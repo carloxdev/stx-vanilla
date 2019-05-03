@@ -4,11 +4,16 @@ import './styles.css'
 
 export default class FieldSelect {
 
-    constructor (id) {
-        this.id = id
-        this.container = null
+    constructor (settings) {
 
-        this.init()
+        if (typeof settings !== 'undefined' || settings != {}) {
+            this.id = settings["id"]
+            this.container = null
+            this.change_method = settings["change_method"]
+            this.init()
+        } else {
+            throw new Error("Se debe proporcionar configuraciones")
+        }
     }
 
     init() {
@@ -17,6 +22,7 @@ export default class FieldSelect {
             placeholder: 'Selecciona un valor',
             searchText: 'buscar',
             searchPlaceholder: 'buscar',
+            onChange: this.change_method
         })
     }
 
@@ -24,21 +30,25 @@ export default class FieldSelect {
         this.container.set(_opt)
     }    
 
-    add_Option (id, text) {
-        this.container.destroy()
+    add_EmptyOption() {
+        let select = document.getElementById(this.id)
+        let opt_empty = document.createElement('option')
 
-        var opt = document.createElement("option")
-        opt.value = id
-        opt.text = text
+        opt_empty.value = null
+        opt_empty.text = '--------'
 
-        var select = document.getElementById(this.id)
+        select.add(opt_empty)
+    }
+
+    add_Option (opt) {
+        let select = document.getElementById(this.id)
         select.add(opt)
 
-        this.init()
+        // this.init()
     }
 
     clear () {
-        var select = document.getElementById(this.id)
+        let select = document.getElementById(this.id)
         select.options.length = 0
     }
 
@@ -57,30 +67,6 @@ export default class FieldSelect {
         var select = document.getElementById(this.id)
         for (let i in select.options) {
             select.options[i] = null
-        }
-    }
-
-    fill_Options(data) {
-        var select = document.getElementById(this.id)
-        let opt_empty = document.createElement('option')
-
-        opt_empty.value = null
-        opt_empty.text = '--------'
-
-        select.add(opt_empty)
-
-        for (let i in data) {
-            let opt = document.createElement('option')
-            opt.value = data[i].id
-            let text = data[i].name
-
-            if ('status' in data[i]) {
-                let status = data[i].is_active ? 'Activo': 'Inactivo'
-                text == `${text}- (${status})`
-            }
-
-            opt.innerHTML = text
-            select.add(opt)
         }
     }
 
