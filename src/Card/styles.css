@@ -186,6 +186,40 @@
                     top: 6px;
                 }
 
+                .card-body-actions .btn-delete {
+                    border: none;
+                    font-family: inherit;
+                    color: inherit;
+                    cursor: pointer;
+                    outline: none;
+                    position: relative;
+                    -webkit-transition: all 0.3s;
+                    -moz-transition: all 0.3s;
+                    transition: all 0.3s;
+                    border-radius: 5px;
+                    text-decoration: none;
+
+                    background: #a74242;
+                    color: white;
+                    box-shadow: 0 6px #762a2a;
+                    -webkit-transition: none;
+                    -moz-transition: none;
+                    transition: none;
+                }
+                .card-body-actions .btn-delete:after {
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    -webkit-transition: all 0.3s;
+                    -moz-transition: all 0.3s;
+                    transition: all 0.3s;
+                }
+                .card-body-actions .btn-delete:active {
+                    box-shadow: 0 0 #9b3535;
+                    top: 6px;
+                }
+
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {

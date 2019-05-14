@@ -1,21 +1,22 @@
 /* General button style (reset) */
 .btn {
     border: none;
-    font-family: inherit;
-    color: inherit;
     background: none;
     cursor: pointer;
+    /* outline: none; */
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 700;
+    color: inherit;
 
     display: inline-block;
-
-    outline: none;
+    user-select: none;
     position: relative;
-    -webkit-transition: all 0.3s;
+    /* -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 700;
+    transition: all 0.3s; */
 }
 
 .btn:after {
@@ -27,136 +28,136 @@
     transition: all 0.3s;
 }
 
-.btn-small {
-    font-size: .8em;
-    padding-top: .2em;
-    padding-bottom: .2em;
-    padding-left: .5em;
-    padding-right: .5em;
-}
+    .btn-small {
+        font-size: .8em;
+        padding-top: .2em;
+        padding-bottom: .2em;
+        padding-left: .5em;
+        padding-right: .5em;
+    }
 
-.btn-normal {
-    font-size: 1em;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    padding-left: .5em;
-    padding-right: .5em;
-}
+    .btn-normal {
+        font-size: 1em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-left: .5em;
+        padding-right: .5em;
+    }
 
-.btn-red {
-    background: #cb4e4e;
-    color: #fff;
-    box-shadow: 0 6px #ab3c3c;
-    -webkit-transition: none;
-    -moz-transition: none;
-    transition: none;
-}
+    .btn-red {
+        background: #cb4e4e;
+        color: #fff;
+        box-shadow: 0 6px #ab3c3c;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
 
-.btn-red:active {
-    box-shadow: 0 0 #ab3c3c;
-    top: 6px;
-}
+    .btn-red:active {
+        box-shadow: 0 0 #ab3c3c;
+        top: 6px;
+    }
 
-.btn-green {
-    background: #17aa56;
-    color: #fff;
-    box-shadow: 0 5px #119e4d;
-    -webkit-transition: none;
-    -moz-transition: none;
-    transition: none;
-}
+    .btn-green {
+        background: #17aa56;
+        color: #fff;
+        box-shadow: 0 5px #119e4d;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
 
-.btn-green:active {
-    box-shadow: 0 0 #0a833d;
-    top: 6px;
-}
+    .btn-green:active {
+        box-shadow: 0 0 #0a833d;
+        top: 6px;
+    }
 
-.btn-excel {
-    background: #0A6332;
-    color: #fff;
-    box-shadow: 0 5px #074523;
-    -webkit-transition: none;
-    -moz-transition: none;
-    transition: none;    
-}
+    .btn-excel {
+        background: #0A6332;
+        color: #fff;
+        box-shadow: 0 5px #074523;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
 
-.btn-excel:active {
-    box-shadow: 0 0 #0d7a3e;
-    top: 6px;
-}
+    .btn-excel:active {
+        box-shadow: 0 0 #0d7a3e;
+        top: 6px;
+    }
 
-.btn-pdf {
-    background: #a74242;
-    color: #fff;
-    box-shadow: 0 6px #762a2a;
-    -webkit-transition: none;
-    -moz-transition: none;
-    transition: none;
-}
+    .btn-pdf {
+        background: #a74242;
+        color: #fff;
+        box-shadow: 0 6px #762a2a;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
 
-.btn-pdf:active {
-    box-shadow: 0 0 #9b3535;
-    top: 6px;
-}
+    .btn-pdf:active {
+        box-shadow: 0 0 #9b3535;
+        top: 6px;
+    }
 
-.btn-yellow {
-    background: #e9a124;
-    color: white;
-    box-shadow: 0 6px #c98c23;
-    -webkit-transition: none;
-    -moz-transition: none;
-    transition: none;
-}
+    .btn-yellow {
+        background: #e9a124;
+        color: white;
+        box-shadow: 0 6px #c98c23;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
 
-.btn-yellow:active {
-    box-shadow: 0 0 #ffb12a;
-    top: 6px;
-}
+    .btn-yellow:active {
+        box-shadow: 0 0 #ffb12a;
+        top: 6px;
+    }
 
-.btn-blue {
-    background: #0e83cd;
-    color: #fff;
-    box-shadow: 0 6px #226fbe;
-    -webkit-transition: none;
-    -moz-transition: none;
-    transition: none;
-}
+    .btn-blue {
+        background: #0e83cd;
+        color: #fff;
+        box-shadow: 0 6px #226fbe;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
 
-.btn-blue:active {
-    box-shadow: 0 0 #55b7f3;
-    top: 6px;
-}
+    .btn-blue:active {
+        box-shadow: 0 0 #55b7f3;
+        top: 6px;
+    }
 
-.btn-gray {
-    background:#868686;
-    color: #fff;
-    box-shadow: 0 6px #757575;
-    -webkit-transition: none;
-    -moz-transition: none;
-    transition: none;
-}
+    .btn-gray {
+        background:#868686;
+        color: #fff;
+        box-shadow: 0 6px #757575;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
 
-.btn-gray:active {
-    box-shadow: 0 0 #a09d9d;
-    top: 6px;
-}
+    .btn-gray:active {
+        box-shadow: 0 0 #a09d9d;
+        top: 6px;
+    }
 
-.btn-purple {
-    background: #823aa0;
-    color: #fff;
-    box-shadow: 0 6px #703b87;
-    -webkit-transition: none;
-    -moz-transition: none;
-    transition: none;
-}
+    .btn-purple {
+        background: #823aa0;
+        color: #fff;
+        box-shadow: 0 6px #703b87;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
 
-.btn-purple:active {
-    box-shadow: 0 0 #9053a9;
-    top: 6px;
-}
+    .btn-purple:active {
+        box-shadow: 0 0 #9053a9;
+        top: 6px;
+    }
 
-.btn-disabled {
-    pointer-events: none;
-    background: #afafaf;
-    box-shadow: 0 6px grey;
-}
+    .btn-disabled {
+        pointer-events: none;
+        background: #afafaf;
+        box-shadow: 0 6px grey;
+    }
