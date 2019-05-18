@@ -32,6 +32,9 @@
         display: flex;
         flex-direction: row;
     }
+    .select-wrapper:focus-within {
+        border: 2px solid #0036D3;
+    }
 
         .select-wrapper .select-header .search-input {
             border: 1px solid #ccc;
@@ -51,6 +54,7 @@
             border-top: 1px solid #ccc;
             border-left: 0;
             border-bottom: 1px solid #ccc;
+            border-right: 1px solid #ccc;
             background: white;
 
             color: #ADB5BC;
@@ -155,6 +159,17 @@
                 padding: .5em;
                 width: 50%;
             }
+
+.select-help {
+    margin-top: 5px;
+    color: #606060;
+    font-size: .9em;
+    text-align: left;
+}
+
+    .select-help ul {
+        padding-left: 2em;
+    }
 
 
 /* Small devices (landscape phones, 576px and up) */
