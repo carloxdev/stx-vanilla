@@ -27,6 +27,11 @@
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
+.btn:disabled {
+    pointer-events: none;
+    background: #afafaf;
+    box-shadow: 0 6px grey;
+}
 
     .btn-small {
         font-size: .8em;
