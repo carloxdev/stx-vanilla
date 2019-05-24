@@ -28,7 +28,7 @@ export default class FieldSelect {
 
     select_Option(_opt) {
         this.container.set(_opt)
-    }    
+    }
 
     add_EmptyOption() {
         let select = document.getElementById(this.id)
@@ -40,7 +40,11 @@ export default class FieldSelect {
         select.add(opt_empty)
     }
 
-    add_Option (opt) {
+    add_Option (value, text) {
+        let opt = document.createElement('option');
+        opt.value = value
+        opt.text = text
+
         let select = document.getElementById(this.id)
         select.add(opt)
 
@@ -72,7 +76,7 @@ export default class FieldSelect {
 
     mark_Options(data) {
         var select = document.getElementById(this.id)
-        for (var i = 0; i < select.options.length; i++) { 
+        for (var i = 0; i < select.options.length; i++) {
             if (data == parseInt(select.options[i].value)) {
                 select.options[i].selected = true
             }
