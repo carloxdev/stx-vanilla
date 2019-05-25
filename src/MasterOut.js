@@ -1,4 +1,4 @@
-import '../node_modules/normalize.css'
+import 'normalize.css'
 
 import Spinner from './Spinner.js'
 import './BarMainSimple.js'

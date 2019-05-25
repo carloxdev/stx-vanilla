@@ -1,4 +1,4 @@
-import './styles/Button.css'
+import './styles/Buttons.css'
 
 class Button {
 
@@ -15,4 +15,4 @@ class Button {
     }
 }
 
-export default Button;
+export default Button
