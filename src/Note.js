@@ -1,4 +1,4 @@
-var moment = require('./node_modules/moment');
+var moment = require('../node_modules/moment');
 moment.locale("es")
 
 import './styles/Note.css'

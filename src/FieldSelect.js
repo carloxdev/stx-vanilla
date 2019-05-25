@@ -1,5 +1,5 @@
-import SlimSelect from './node_modules/slim-select'
-import "./node_modules/slim-select/dist/slimselect.min.css"
+import SlimSelect from '../node_modules/slim-select'
+import "../node_modules/slim-select/dist/slimselect.min.css"
 import './styles/FieldSelect.css'
 
 export default class FieldSelect {
