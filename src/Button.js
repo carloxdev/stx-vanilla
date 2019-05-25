@@ -1,4 +1,4 @@
-import './styles/Buttons.css'
+import './styles/buttons.css'
 
 class Button {
 
