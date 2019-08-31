@@ -1,6 +1,6 @@
-import flatpickr from '../node_modules/flatpickr'
-import '../node_modules/flatpickr/dist/flatpickr.min.css'
-import { Spanish } from '../node_modules/flatpickr/dist/l10n/es.js'
+import flatpickr from "flatpickr";
+import { Spanish } from '../flatpickr/dist/l10n/es.js'
+
 import './styles/FieldDate.css'
 
 import moment from 'moment'
