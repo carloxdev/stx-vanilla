@@ -3,6 +3,8 @@ import '../node_modules/flatpickr/dist/flatpickr.min.css'
 import { Spanish } from '../node_modules/flatpickr/dist/l10n/es.js'
 import './styles/FieldDateRange.css'
 
+import moment from 'moment'
+
 
 class FieldDateRange {
 

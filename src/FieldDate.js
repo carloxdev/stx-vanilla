@@ -3,7 +3,8 @@ import '../node_modules/flatpickr/dist/flatpickr.min.css'
 import { Spanish } from '../node_modules/flatpickr/dist/l10n/es.js'
 import './styles/FieldDate.css'
 
-var moment = require('../node_modules/moment')
+import moment from 'moment'
+
 
 export default class FieldDate {
 

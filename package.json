@@ -20,7 +20,7 @@
 	"devDependencies": {},
 	"dependencies": {
 		"flatpickr": "4.5.2",
-		"moment": "2.24.0",
+		"moment": "^2.24.0",
 		"normalize.css": "8.0.1",
 		"slim-select": "1.18.9"
 	}
